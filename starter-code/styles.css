@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin:0 auto;
+    background-image: url("./assets/home/mobile/image-hero-coffeepress.jpg");
+    border-radius:10px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+}
+
+.container {
+    padding-left:1rem;
+    padding-right:1rem;
+}
