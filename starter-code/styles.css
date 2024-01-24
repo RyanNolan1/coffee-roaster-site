@@ -8,10 +8,20 @@ header {
     margin:0 auto;
     background-image: url("./assets/home/mobile/image-hero-coffeepress.jpg");
     border-radius:10px;
+    padding:4rem 2rem 4rem 2rem;
 }
 
 h1 {
     font-family: 'Fraunces', serif;
+    color:white;
+    text-align: center;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.625rem;
+    color:white;
+    text-align: center;
 }
 
 .container {
