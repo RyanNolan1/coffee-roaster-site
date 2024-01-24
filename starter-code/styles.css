@@ -49,3 +49,14 @@ p {
     padding-left:1rem;
     padding-right:1rem;
 }
+
+.collections {
+    padding: 8rem 1rem 8rem 1rem;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.collections img {
+    max-width:100%;
+}
