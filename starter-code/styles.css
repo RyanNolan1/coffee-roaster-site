@@ -209,7 +209,7 @@ nav {
   gap:2rem;
 }
 
-a {
+.footer-nav a {
   text-decoration: none;
   color:#83888F;
   font-family: "Barlow", sans-serif;;
