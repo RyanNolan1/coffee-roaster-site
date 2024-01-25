@@ -14,7 +14,7 @@ header {
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  padding: 6rem 2rem 6rem 2rem;
+  padding: 6rem 1rem 6rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -245,9 +245,16 @@ footer {
   justify-content: start;
   align-items:center;
   position: absolute;
-  background-color: white;
-  padding-top:6rem;
+  background:-webkit-linear-gradient(270deg, rgba(254,252,247,1) 40%, rgba(255,255,255,0) 100%);
+  padding-top:4rem;
   gap:2rem;
+}
+
+.mobile-menu-overlay a {
+  font-size:1.5rem;
+  text-decoration: none;
+  color: rgb(51, 61, 75);
+  font-family: "Fraunces", serif;
 }
 
 .nav-active {
