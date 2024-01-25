@@ -193,3 +193,31 @@ p {
 .how-it-works-container h3 {
   color: rgb(51, 61, 75);
 }
+
+footer {
+  padding: 4rem 0rem;
+  background-color: #2C343E;
+  margin-bottom:6rem;
+}
+
+nav {
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  color:white;
+  align-items: center;
+  gap:2rem;
+}
+
+a {
+  text-decoration: none;
+  color:#83888F;
+  font-family: "Barlow", sans-serif;;
+  font-size:0.75rem;
+}
+
+.social-icons {
+  display:flex;
+  justify-content: space-between;
+  gap:1rem;
+}
