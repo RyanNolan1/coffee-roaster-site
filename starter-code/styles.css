@@ -4,13 +4,17 @@
     padding: 0;
 }
 
+body {
+    background: #FEFCF7;
+}
+
 header {
     margin:0 auto;
     background-image: url("./assets/home/mobile/image-hero-coffeepress.jpg");
     background-position: center;
     background-size: cover;
     border-radius:10px;
-    padding:6rem 1rem 6rem 1rem;
+    padding:6rem 2rem 6rem 2rem;
     display:flex;
     flex-direction:column;
     gap:2rem;
@@ -40,12 +44,54 @@ h1 {
     line-height:2.5rem;
 }
 
+h2 {
+    font-family: 'Fraunces', serif; 
+    font-size:2.8rem;
+    line-height:2.8rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Fraunces', serif;   
+    font-size:1.6rem;
+    line-height:1.6rem;
+    text-align: center;
+    color:rgb(51, 61, 75);
+}
+
 p {
     font-family: 'Barlow', sans-serif;
     line-height: 1.625rem;
+    text-align: center;
 }
 
 .container {
     padding-left:1rem;
     padding-right:1rem;
+}
+
+.collections {
+    padding: 8rem 1rem 8rem 1rem;
+    display:flex;
+    flex-direction: column;
+    gap:4rem;
+    align-items: center;
+}
+
+.collections h2 {
+    background: -webkit-linear-gradient(#83888F, #FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.collection-coffee img {
+    max-width:80%;
+}
+
+.collection-coffee {
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
 }
