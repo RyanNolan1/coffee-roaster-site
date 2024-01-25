@@ -148,6 +148,10 @@ p {
     border-radius:10px;
 }
 
-.choose-container h3, p {
+.choose-container h3 {
+    color:white;
+}
+
+.choose-container p {
     color:white;
 }
