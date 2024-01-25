@@ -42,8 +42,8 @@ h1 {
 
 h2 {
     font-family: 'Fraunces', serif; 
-    font-size:2.5rem;
-    line-height:2.5rem;
+    font-size:2.8rem;
+    line-height:2.8rem;
     text-align: center;
 }
 
@@ -72,6 +72,12 @@ p {
     flex-direction: column;
     gap:5rem;
     align-items: center;
+}
+
+.collections h2 {
+    background: -webkit-linear-gradient(#83888F, #FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .collection-coffee img {
