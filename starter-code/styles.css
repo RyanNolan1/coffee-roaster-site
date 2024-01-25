@@ -230,8 +230,26 @@ footer {
 }
 
 .header-nav {
-  padding: 2rem 0;
+  padding: 2rem 1.5rem;
   display:flex;
   align-items:center;
   justify-content: space-between;
+}
+
+.mobile-menu-overlay {
+  z-index:1;
+  height:100%;
+  width:100vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items:center;
+  position: absolute;
+  background-color: white;
+  padding-top:6rem;
+  gap:2rem;
+}
+
+.nav-active {
+  display:none;
 }
