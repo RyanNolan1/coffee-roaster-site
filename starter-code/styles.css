@@ -53,10 +53,17 @@ h2 {
 
 h3 {
     font-family: 'Fraunces', serif;   
-    font-size:1.6rem;
-    line-height:1.6rem;
+    font-size:1.75rem;
+    line-height:1.75rem;
     text-align: center;
     color:rgb(51, 61, 75);
+}
+
+h4 {
+    text-align: center;
+    font-size:5rem;
+    font-family: 'Fraunces', serif; 
+    color:#FDD6BA;  
 }
 
 p {
@@ -154,4 +161,19 @@ p {
 .choose-container h3,
 .choose-container p {
     color:white;
+}
+
+.how-it-works {
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    align-items: center;
+}
+
+.how-it-works-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    border-radius:10px;
 }
