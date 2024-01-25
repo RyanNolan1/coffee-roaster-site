@@ -248,6 +248,9 @@ footer {
   background:-webkit-linear-gradient(270deg, rgba(254,252,247,1) 40%, rgba(255,255,255,0) 100%);
   padding-top:4rem;
   gap:2rem;
+  visibility:hidden;
+  opacity:0;
+  transition:0.5s;
 }
 
 .mobile-menu-overlay a {
@@ -258,5 +261,6 @@ footer {
 }
 
 .nav-active {
-  display:none;
+  opacity:1;
+  visibility: visible;
 }
