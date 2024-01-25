@@ -70,11 +70,18 @@ p {
     padding: 8rem 1rem 8rem 1rem;
     display:flex;
     flex-direction: column;
-    gap:
-    1.5rem;
+    gap:5rem;
+    align-items: center;
 }
 
-.collections img {
-    max-width:60%;
-    margin:0 auto;
+.collection-coffee img {
+    max-width:80%;
+}
+
+.collection-coffee {
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
 }
