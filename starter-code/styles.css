@@ -71,7 +71,7 @@ p {
     gap:1.5rem;
     grid-row: 1/2;
     grid-column: 1/2;
-    padding: 4rem 1.5rem;
+    padding: 4rem 1.5rem 8rem 1.5rem;
 }
 
 .choose-content h3,
