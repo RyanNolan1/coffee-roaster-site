@@ -21,7 +21,7 @@ header {
   align-items: center;
 }
 
-button {
+.green-button {
   border: none;
   background: rgb(14, 135, 132);
   font-size: 1.2rem;
