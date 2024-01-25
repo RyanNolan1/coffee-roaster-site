@@ -74,10 +74,7 @@ p {
     padding: 4rem 1.5rem;
 }
 
-.choose-content h3 {
-    color:white; 
-}
-
+.choose-content h3,
 .choose-content p {
     color:white; 
 }
@@ -127,7 +124,6 @@ p {
 .dark-background {
     background:#2C343E;
     border-radius:10px;
-    padding:4rem 1rem 1rem 1rem;
     grid-row: 1/2;
 }
 
@@ -155,10 +151,7 @@ p {
     border-radius:10px;
 }
 
-.choose-container h3 {
-    color:white;
-}
-
+.choose-container h3,
 .choose-container p {
     color:white;
 }
