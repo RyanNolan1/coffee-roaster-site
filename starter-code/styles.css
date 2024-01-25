@@ -62,7 +62,7 @@ h3 {
 h4 {
   text-align: center;
   font-size: 5rem;
-  line-height:5rem;
+  line-height: 5rem;
   font-family: "Fraunces", serif;
   color: #fdd6ba;
 }
@@ -123,7 +123,7 @@ p {
 
 .why-choose-us h2 {
   color: #fefcf7;
-  font-size:1.75rem;
+  font-size: 1.75rem;
 }
 
 .choose-background {
@@ -174,16 +174,15 @@ p {
   flex-direction: column;
   gap: 4rem;
   align-items: center;
-  padding-bottom:8rem;
+  padding-bottom: 8rem;
 }
 
-
 .how-it-works-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 10px;
 }
 
 .how-it-works h3 {
@@ -195,30 +194,36 @@ p {
 }
 
 footer {
-  padding: 4rem 0rem;
-  background-color: #2C343E;
-  margin-bottom:6rem;
+  padding: 3rem 0rem;
+  background-color: #2c343e;
+  margin-bottom: 6rem;
 }
 
-nav {
-  display:flex;
+.footer-nav  {
+  display: flex;
   flex-direction: column;
   text-decoration: none;
-  color:white;
+  color: white;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
 }
 
 .footer-nav a {
   text-decoration: none;
-  color:#83888F;
-  font-family: "Barlow", sans-serif;;
-  font-size:0.75rem;
-  font-weight:700
+  color: #83888f;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: .1rem;;
 }
 
 .social-icons {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  gap:1rem;
+  gap: 1.8rem;
+  padding-top:1rem;
+}
+
+.footer-logo {
+  padding-bottom:1rem;
 }
