@@ -94,6 +94,12 @@ p {
   padding: 5.6875rem 1.5rem 0 1.5rem;
 }
 
+.collections-container {
+  display:flex;
+  flex-direction:column;
+  gap:4rem;
+}
+
 .collections {
   padding: 8rem 1rem 8rem 1rem;
   display: flex;
@@ -341,7 +347,6 @@ footer {
   }
 
   .collection-coffee {
-    padding-top:4rem;
     flex-direction: row;
   }
 
@@ -468,4 +473,9 @@ footer {
     height:2px;
     background:#FDD6BA;
   }
+
+
+.collections-container {
+  padding-top:4rem;
+}
 }
