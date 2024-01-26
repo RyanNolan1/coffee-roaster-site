@@ -490,3 +490,10 @@ footer {
   padding-top:4rem;
 }
 }
+
+@media(min-width:1000px) {
+  header {
+    background-image: url("./assets/home/desktop/image-hero-coffeepress.jpg");
+    padding: 8rem 4rem 8rem 4rem;
+  }
+}
