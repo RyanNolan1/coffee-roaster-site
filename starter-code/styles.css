@@ -296,7 +296,7 @@ footer {
 
 @media (min-width:768px) {
   .container {
-    padding:0 2rem;
+    padding: 5.6875rem 2rem 0 2rem;
   }
 
   h1 {
