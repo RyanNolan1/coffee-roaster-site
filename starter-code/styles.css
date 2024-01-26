@@ -34,6 +34,7 @@ header {
 header p {
   color: #fefcf7;
   text-align: center;
+  max-width:25rem;
 }
 
 h1 {
@@ -42,6 +43,7 @@ h1 {
   text-align: center;
   font-size: 2.5rem;
   line-height: 2.5rem;
+  max-width:20rem;
 }
 
 h2 {
@@ -86,10 +88,18 @@ p {
 .choose-content h3,
 .choose-content p {
   color: #fefcf7;
+  max-width:20rem;
+  margin:0 auto;
 }
 
 .container {
   padding: 5.6875rem 1.5rem 0 1.5rem;
+}
+
+.collections-container {
+  display:flex;
+  flex-direction:column;
+  gap:4rem;
 }
 
 .collections {
@@ -102,7 +112,7 @@ p {
 
 .collections h2 {
   background: -webkit-linear-gradient(#83888f, #ffff);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -120,6 +130,12 @@ p {
 
 .why-choose-us {
   display: grid;
+}
+
+.why-choose-info {
+  display:flex;
+  flex-direction: column;
+  gap:1.5rem;
 }
 
 .why-choose-us h2 {
@@ -152,7 +168,7 @@ p {
 }
 
 .choose-container img {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .choose-container {
@@ -173,7 +189,7 @@ p {
 .how-it-works {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
   padding-bottom: 8rem;
 }
@@ -182,7 +198,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 4rem;
   border-radius: 10px;
 }
 
@@ -192,6 +208,16 @@ p {
 
 .how-it-works-container h3 {
   color: rgb(51, 61, 75);
+}
+
+.how-it-works-info {
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+}
+
+.how-it-works-info p {
+  max-width:20rem;
 }
 
 footer {
@@ -229,7 +255,7 @@ footer {
   padding-bottom:1rem;
 }
 
-.header-nav {
+.header-nav-section {
   padding: 2rem 1.5rem;
   display:flex;
   align-items:center;
@@ -271,4 +297,196 @@ footer {
 .nav-active {
   opacity:1;
   visibility: visible;
+}
+
+.coffee-info {
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+
+.coffee-info p {
+  max-width:17.625rem;
+}
+
+.header-nav {
+  display:none;
+}
+
+
+@media (min-width:768px) {
+
+  body {
+    font-size:15px;
+  }
+
+  .container {
+    padding: 7.6796875rem 2.5rem 0 2.5rem;
+  }
+
+  h1 {
+    max-width:20rem;
+    text-align: start;
+  }
+
+  h3 {
+    font-size:1.75rem;
+    line-height:1.75rem;
+  }
+
+  header {
+    background-image: url("./assets/home/tablet/image-hero-coffeepress.jpg");
+    padding: 6rem 4rem 6rem 4rem;
+    align-items: start;
+  }
+
+  header p {
+    text-align:left;
+    max-width:26rem;
+  }
+
+  .collections h2 {
+    font-size:7rem;
+    padding:2rem 0;
+    position: absolute;
+  }
+
+  .collection-coffee img {
+    z-index:1;
+    max-width:40%;
+  }
+
+  .collection-coffee {
+    flex-direction: row;
+  }
+
+  .coffee-info {
+    align-items:start;
+    z-index:1;
+  }
+
+  .coffee-info p {
+    text-align: left;
+    max-width: 17.625rem;
+  }
+
+  .choose-container {
+    flex-direction: row;
+    margin: 0 auto;
+    width:90%;
+    justify-content: center;
+    gap:4rem;
+  }
+
+  .choose-content p {
+    max-width:33.75rem;
+    margin:0 auto;
+  }
+  
+  .why-choose-info {
+    display: flex;
+    flex-direction:column;
+    gap:1.5rem;
+    align-items: start;
+  }
+  
+  .why-choose-info {
+    display: flex;
+    flex-direction:column;
+    gap:1.5rem;
+  }
+
+  .why-choose-info p {
+    max-width:21.5rem;
+    text-align: left;
+  }
+
+  .choose-container img {
+    padding:0;
+  }
+
+  .how-it-works {
+    flex-direction: column;
+    align-items: start;
+    gap:3rem;
+  }
+
+  .how-it-works-container {
+    flex-direction: row;
+    align-items: stretch;
+    gap:1.5rem;
+  }
+
+  .how-it-works-info {
+    display: flex;
+    flex-direction:column;
+    gap:3rem;
+    padding:0;
+  }
+
+
+
+  .how-it-works-info h4,
+  .how-it-works-info h3,
+  .how-it-works-info p {
+    text-align: left;
+  }
+
+  .how-it-works-info h3 {
+    max-width:10rem;
+  }
+
+  #burger-nav {
+    display:none;
+  }
+
+  .mobile-menu-overlay {
+    display: none;
+  }
+
+  .header-nav-section {
+    padding:2.5rem 2.5rem;
+  }
+
+  .header-nav {
+    display: flex;
+    gap:2rem;
+  }
+
+  .header-nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #83888f;
+    font-family: "Barlow", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: .1rem;;
+  }
+
+  .header-logo {
+    width:14.75rem;
+  }
+
+  .how-it-works-image {
+    display:flex;
+    align-items: center;
+  }
+
+  .circle {
+    width: 1.9375rem;
+    height: 1.9375rem;
+    border-radius: 100px;
+    border:2px solid #0E8784;
+  }
+
+  .line {
+    width:12.625rem;
+    height:2px;
+    background:#FDD6BA;
+  }
+
+
+.collections-container {
+  padding-top:4rem;
+}
 }
