@@ -272,3 +272,29 @@ footer {
   opacity:1;
   visibility: visible;
 }
+
+
+@media (min-width:768px) {
+  h1 {
+    max-width:20rem;
+    text-align: start;
+  }
+
+  header {
+    background-image: url("./assets/home/tablet/image-hero-coffeepress.jpg");
+    padding: 6rem 4rem 6rem 4rem;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  header p {
+    text-align:left;
+    max-width:26rem;
+  }
+}
