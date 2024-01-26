@@ -492,6 +492,13 @@ footer {
 }
 
 @media(min-width:1000px) {
+.container {
+    padding: 7rem 2.5rem 0 2.5rem;
+}
+  body {
+    font-size:16px;
+  }
+
   header {
     background-image: url("./assets/home/desktop/image-hero-coffeepress.jpg");
     padding: 8rem 4rem 8rem 4rem;
