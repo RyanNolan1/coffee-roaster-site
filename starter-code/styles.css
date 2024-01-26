@@ -88,6 +88,8 @@ p {
 .choose-content h3,
 .choose-content p {
   color: #fefcf7;
+  max-width:20rem;
+  margin:0 auto;
 }
 
 .container {
@@ -215,7 +217,7 @@ p {
 }
 
 .how-it-works-info p {
-  max-width:20.4375rem;
+  max-width:20rem;
 }
 
 footer {
