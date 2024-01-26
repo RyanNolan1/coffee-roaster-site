@@ -491,7 +491,7 @@ footer {
 }
 }
 
-@media(min-width:1000px) {
+@media(min-width:1140px) {
 .container {
     padding: 7rem 2.5rem 0 2.5rem;
     max-width:90rem;
@@ -533,6 +533,7 @@ footer {
 
 .collections-container {
   justify-content: space-between;
+  align-items: start;
 }
 
 }
