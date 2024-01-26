@@ -292,4 +292,14 @@ footer {
     text-align:left;
     max-width:26rem;
   }
+
+  .collections h2 {
+    font-size:7rem;
+    padding:2rem 0;
+    position: absolute;
+  }
+
+  .collection-coffee img {
+    z-index:1;
+  }
 }
