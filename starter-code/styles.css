@@ -275,6 +275,12 @@ footer {
   visibility: visible;
 }
 
+.coffee-info {
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+
 
 @media (min-width:768px) {
   h1 {
@@ -301,5 +307,19 @@ footer {
 
   .collection-coffee img {
     z-index:1;
+    max-width:40%;
+  }
+
+  .collection-coffee {
+    flex-direction: row;
+  }
+
+  .coffee-info {
+    align-items:start;
+  }
+
+  .coffee-info p {
+    text-align: left;
+    max-width: 17.625rem;
   }
 }
