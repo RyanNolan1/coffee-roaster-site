@@ -243,7 +243,7 @@ footer {
   padding-bottom:1rem;
 }
 
-.header-nav {
+.header-nav-section {
   padding: 2rem 1.5rem;
   display:flex;
   align-items:center;
@@ -291,6 +291,10 @@ footer {
   display:flex;
   flex-direction:column;
   gap:1.5rem;
+}
+
+.header-nav {
+  display:none;
 }
 
 
@@ -405,6 +409,10 @@ footer {
   .how-it-works-info h3,
   .how-it-works-info p {
     text-align: left;
+  }
+
+  #burger-nav {
+    display:none;
   }
 
 }
