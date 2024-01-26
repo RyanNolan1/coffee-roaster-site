@@ -317,6 +317,15 @@ footer {
   display: none;
 }
 
+.nav-container {
+  display: flex;
+  max-width: 90rem;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 15px;
@@ -533,20 +542,23 @@ footer {
   .collections-container {
     justify-content: space-between;
     align-items: start;
-    padding-top:8rem;
+    padding-top: 8rem;
   }
 
   .collections h2 {
-    padding:6rem 0;
-    min-width:100%;
-    max-width:90rem;
-    font-size:15vw;
-}
+    padding: 6rem 0;
+    min-width: 100%;
+    max-width: 90rem;
+    font-size: 15vw;
+  }
+
+  .nav-container {
+    max-width: 85rem;
+  }
 }
 
-
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .collections h2 {
-    font-size:14.2rem;
+    font-size: 14.2rem;
   }
 }
