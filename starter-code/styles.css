@@ -104,7 +104,7 @@ p {
 
 .collections h2 {
   background: -webkit-linear-gradient(#83888f, #ffff);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -122,6 +122,12 @@ p {
 
 .why-choose-us {
   display: grid;
+}
+
+.why-choose-info {
+  display:flex;
+  flex-direction: column;
+  gap:1.5rem;
 }
 
 .why-choose-us h2 {
@@ -154,7 +160,7 @@ p {
 }
 
 .choose-container img {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .choose-container {
