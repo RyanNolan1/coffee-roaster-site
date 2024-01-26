@@ -89,7 +89,7 @@ p {
 }
 
 .container {
-  padding: 0 1.5rem;
+  padding: 5.6875rem 1.5rem;
 }
 
 .collections {
@@ -234,6 +234,10 @@ footer {
   display:flex;
   align-items:center;
   justify-content: space-between;
+  position:fixed;
+  z-index:2;
+  width:100%;
+  background-color:  #fefcf7;;
 }
 
 .mobile-menu-overlay {
@@ -244,9 +248,9 @@ footer {
   flex-direction: column;
   justify-content: start;
   align-items:center;
-  position: absolute;
-  background:-webkit-linear-gradient(270deg, rgba(254,252,247,1) 40%, rgba(255,255,255,0) 100%);
-  padding-top:4rem;
+  position: fixed;
+  background:-webkit-linear-gradient(270deg, rgba(254,252,247,1) 45%, rgba(255,255,255,0) 100%);
+  padding-top:8rem;
   gap:2rem;
   visibility:hidden;
   opacity:0;
