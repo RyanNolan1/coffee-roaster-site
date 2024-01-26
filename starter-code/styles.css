@@ -555,7 +555,13 @@ footer {
   .nav-container {
     max-width: 85rem;
   }
+
+  .container {
+    padding: 6.6796875rem 1.5rem 0 1.5rem;
+  }
 }
+
+
 
 @media (min-width: 1440px) {
   .collections h2 {
