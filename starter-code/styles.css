@@ -388,7 +388,7 @@ footer {
   .how-it-works {
     flex-direction: column;
     align-items: start;
-    gap:1rem;
+    gap:2rem;
   }
 
   .how-it-works-container {
@@ -440,5 +440,23 @@ footer {
 
   .header-logo {
     width:236px;
+  }
+
+  .how-it-works-image {
+    display:flex;
+    align-items: center;
+  }
+
+  .circle {
+    width: 1.9375rem;
+    height: 1.9375rem;
+    border-radius: 100px;
+    border:2px solid #0E8784;
+  }
+
+  .line {
+    width:12.625rem;
+    height:2px;
+    background:#FDD6BA;
   }
 }
