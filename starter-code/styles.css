@@ -494,6 +494,8 @@ footer {
 @media(min-width:1000px) {
 .container {
     padding: 7rem 2.5rem 0 2.5rem;
+    max-width:90rem;
+    margin:0 auto;
 }
   body {
     font-size:16px;
@@ -503,4 +505,34 @@ footer {
     background-image: url("./assets/home/desktop/image-hero-coffeepress.jpg");
     padding: 8rem 4rem 8rem 4rem;
   }
+
+  .collections-container {
+    flex-direction: row;
+  }
+
+  .collection-coffee {
+    flex-direction:column;
+  }
+
+  .collection-coffee img {
+    min-width:100%;
+  }
+
+  .collection-coffee h3 {
+    text-align: center;
+  }
+
+  .coffee-info {
+    align-items: center;
+}
+
+.coffee-info p {
+  text-align: center;
+  max-width:18rem;
+}
+
+.collections-container {
+  justify-content: space-between;
+}
+
 }
