@@ -324,4 +324,39 @@ footer {
     text-align: left;
     max-width: 17.625rem;
   }
+
+  .choose-container {
+    flex-direction: row;
+    margin: 0 auto;
+    width:90%;
+    justify-content: center;
+    gap:4rem;
+  }
+
+  .choose-content p {
+    max-width:33.75rem;
+    margin:0 auto;
+  }
+  
+  .why-choose-info {
+    display: flex;
+    flex-direction:column;
+    gap:1.5rem;
+    align-items: start;
+  }
+  
+  .why-choose-info {
+    display: flex;
+    flex-direction:column;
+    gap:1.5rem;
+  }
+
+  .why-choose-info p {
+    max-width:21.5rem;
+    text-align: left;
+  }
+
+  .choose-container img {
+    padding:0;
+  }
 }
