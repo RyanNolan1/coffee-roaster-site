@@ -14,7 +14,7 @@ header {
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  padding: 6rem 2rem 6rem 2rem;
+  padding: 6rem 1rem 6rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -89,7 +89,7 @@ p {
 }
 
 .container {
-  padding: 0 1.5rem;
+  padding: 5.6875rem 1.5rem 0 1.5rem;
 }
 
 .collections {
@@ -227,4 +227,48 @@ footer {
 
 .footer-logo {
   padding-bottom:1rem;
+}
+
+.header-nav {
+  padding: 2rem 1.5rem;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  position:fixed;
+  z-index:2;
+  width:100%;
+  background-color:  #fefcf7;;
+}
+
+.header-logo {
+  width:10.1875rem;
+}
+
+.mobile-menu-overlay {
+  z-index:1;
+  height:100%;
+  width:100vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items:center;
+  position: fixed;
+  background:-webkit-linear-gradient(270deg, rgba(254,252,247,1) 45%, rgba(255,255,255,0) 100%);
+  padding-top:8rem;
+  gap:2rem;
+  visibility:hidden;
+  opacity:0;
+  transition:0.5s;
+}
+
+.mobile-menu-overlay a {
+  font-size:1.5rem;
+  text-decoration: none;
+  color: rgb(51, 61, 75);
+  font-family: "Fraunces", serif;
+}
+
+.nav-active {
+  opacity:1;
+  visibility: visible;
 }
