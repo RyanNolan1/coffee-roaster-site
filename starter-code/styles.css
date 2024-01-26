@@ -559,6 +559,25 @@ footer {
   .container {
     padding: 6.6796875rem 1.5rem 0 1.5rem;
   }
+
+  .choose-content {
+    flex-direction:row;
+  }
+
+  .choose-container {
+    flex-direction:column;
+    gap:3rem;
+  }
+
+  .choose-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+  .why-choose {
+    grid-column: 1/4;
+    gap:2rem;
+}
 }
 
 
