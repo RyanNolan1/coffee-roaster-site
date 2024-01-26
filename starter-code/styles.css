@@ -240,6 +240,10 @@ footer {
   background-color:  #fefcf7;;
 }
 
+.header-logo {
+  width:10.1875rem;
+}
+
 .mobile-menu-overlay {
   z-index:1;
   height:100%;
