@@ -421,7 +421,7 @@ footer {
 
   .header-nav {
     display: flex;
-    gap:1.5rem;
+    gap:2rem;
   }
 
   .header-nav a {
@@ -434,4 +434,7 @@ footer {
     letter-spacing: .1rem;;
   }
 
+  .header-logo {
+    width:236px;
+  }
 }
