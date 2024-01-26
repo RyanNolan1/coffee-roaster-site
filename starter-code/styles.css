@@ -187,16 +187,16 @@ p {
 .how-it-works {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
 }
 
 .how-it-works-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 4rem;
   border-radius: 10px;
 }
 
@@ -212,6 +212,10 @@ p {
   display: flex;
   flex-direction: column;
   gap:1.5rem;
+}
+
+.how-it-works-info p {
+  max-width:20.4375rem;
 }
 
 footer {
@@ -297,6 +301,10 @@ footer {
   display:flex;
   flex-direction:column;
   gap:1.5rem;
+}
+
+.coffee-info p {
+  max-width:17.625rem;
 }
 
 .header-nav {
@@ -412,8 +420,9 @@ footer {
     flex-direction:column;
     gap:3rem;
     padding:0;
-
   }
+
+
 
   .how-it-works-info h4,
   .how-it-works-info h3,
