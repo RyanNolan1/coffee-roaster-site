@@ -300,7 +300,7 @@ footer {
 
 @media (min-width:768px) {
   .container {
-    padding: 5.6875rem 2rem 0 2rem;
+    padding: 7.6796875rem 3rem 0 3rem;
   }
 
   h1 {
@@ -417,6 +417,10 @@ footer {
 
   .mobile-menu-overlay {
     display: none;
+  }
+
+  .header-nav-section {
+    padding:3rem 3rem;
   }
 
   .header-nav {
