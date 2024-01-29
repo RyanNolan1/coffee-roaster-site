@@ -593,9 +593,26 @@ footer {
     padding-bottom:4rem;
 }
 
-
 .why-choose-info p {
   text-align: center;
+}
+
+.how-it-works-container {
+  width:100%;
+  justify-content: space-between;
+}
+
+.how-it-works {
+  padding:0 4rem;
+}
+
+.how-it-works-info {
+  width:100%;
+}
+
+.how-it-works-info p {
+  max-width: 17rem;
+}
 }
 
 
@@ -604,5 +621,4 @@ footer {
   .collections h2 {
     font-size: 14.2rem;
   }
-}
 }
