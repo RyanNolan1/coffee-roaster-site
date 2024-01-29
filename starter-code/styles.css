@@ -128,6 +128,13 @@ p {
   gap: 1.5rem;
 }
 
+.why-choose {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
 .why-choose-us {
   display: grid;
 }
@@ -425,8 +432,8 @@ footer {
   .how-it-works-container {
     flex-direction: row;
     align-items: stretch;
-    gap:0;
-    width:100%;
+    gap: 0;
+    width: 100%;
   }
 
   .how-it-works-info {
@@ -434,7 +441,7 @@ footer {
     flex-direction: column;
     gap: 3rem;
     padding: 0;
-    width:100%;
+    width: 100%;
   }
 
   .how-it-works-info h4,
@@ -448,7 +455,7 @@ footer {
   }
 
   .how-it-works-info p {
-   max-width:13.3rem;
+    max-width: 13.3rem;
   }
 
   #burger-nav {
@@ -567,60 +574,58 @@ footer {
   }
 
   .choose-content {
-    flex-direction:row;
+    flex-direction: row;
   }
 
   .choose-container {
-    flex-direction:column;
-    width:100%;
+    flex-direction: column;
+    width: 100%;
     justify-content: space-between;
     padding: 6rem 2rem;
   }
 
-  .choose-container p  {
-    max-width:16rem;
+  .choose-container p {
+    max-width: 16rem;
   }
-  
+
   .choose-container:nth-child(4) img {
-  margin-top:1.2rem;
+    margin-top: 1.2rem;
   }
 
   .choose-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 4rem 4rem 8rem 4rem
-}
+    padding: 4rem 4rem 8rem 4rem;
+  }
 
   .why-choose {
     grid-column: 1/4;
-    gap:2rem;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
-    padding-bottom:4rem;
-}
+    padding-bottom: 4rem;
+  }
 
-.why-choose-info p {
-  text-align: center;
-}
+  .why-choose-info p {
+    text-align: center;
+  }
 
-.how-it-works-container {
-  width:100%;
-}
+  .how-it-works-container {
+    width: 100%;
+  }
 
-.how-it-works {
-  padding:0rem 4rem 8rem 4rem;
-}
+  .how-it-works {
+    padding: 0rem 4rem 8rem 4rem;
+  }
 
-.how-it-works-info {
-  width:100%;
-}
+  .how-it-works-info {
+    width: 100%;
+  }
 
-.how-it-works-info p {
-  max-width: 17rem;
+  .how-it-works-info p {
+    max-width: 17rem;
+  }
 }
-}
-
-
 
 @media (min-width: 1440px) {
   .collections h2 {
