@@ -566,18 +566,25 @@ footer {
 
   .choose-container {
     flex-direction:column;
-    gap:3rem;
+    width:100%;
+    justify-content: space-between;
   }
 
   .choose-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 4rem 8rem 4rem
 }
 
   .why-choose {
     grid-column: 1/4;
     gap:2rem;
+    display: flex;
+    flex-direction: column;
 }
+
+.why-choose-info p {
+  text-align: center;
 }
 
 
