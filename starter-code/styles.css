@@ -590,6 +590,7 @@ footer {
     gap:2rem;
     display: flex;
     flex-direction: column;
+    padding-bottom:4rem;
 }
 
 
