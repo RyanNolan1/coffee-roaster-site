@@ -27,8 +27,14 @@ header {
   font-size: 1.2rem;
   color: #fefcf7;
   font-family: "Fraunces", serif;
-  padding: 1rem 2rem 1rem 2rem;
-  border-radius: 10px;
+  padding: 1rem 2rem 1rem;
+  transition:0.3s;
+  border-radius: 10px;;
+}
+
+.green-button:hover {
+  background: #66D2CF;
+  cursor:pointer;
 }
 
 header p {
@@ -74,6 +80,10 @@ p {
   line-height: 1.625rem;
   text-align: center;
   color: #333d4b;
+}
+
+a {
+  transition:0.4s;
 }
 
 .choose-content {
@@ -270,7 +280,23 @@ footer {
   position: fixed;
   z-index: 2;
   width: 100%;
-  background-color: #fefcf7;
+  background: #fefcf7;
+}
+
+.header-nav a:hover {
+  color:#333D4B;
+}
+
+.footer-nav a:hover {
+  color:#fefcf7;
+}
+
+.social-icons a svg path {
+  transition: 0.4s;
+}
+
+.social-icons a:hover svg path {
+  fill:#fdd6ba;
 }
 
 .header-logo {
