@@ -499,7 +499,7 @@ footer {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1200px) {
   .container {
     padding: 7rem 2.5rem 0 2.5rem;
     max-width: 90rem;
@@ -568,6 +568,15 @@ footer {
     flex-direction:column;
     width:100%;
     justify-content: space-between;
+    padding: 6rem 2rem;
+  }
+
+  .choose-container p  {
+    max-width:16rem;
+  }
+  
+  .choose-container:nth-child(4) img {
+  margin-top:1.2rem;
   }
 
   .choose-content {
@@ -583,9 +592,6 @@ footer {
     flex-direction: column;
 }
 
-.choose-container:nth-child(4) img {
-margin-top:1.2rem;
-}
 
 .why-choose-info p {
   text-align: center;
@@ -597,4 +603,5 @@ margin-top:1.2rem;
   .collections h2 {
     font-size: 14.2rem;
   }
+}
 }
