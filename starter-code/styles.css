@@ -274,6 +274,7 @@ footer {
   justify-content: space-between;
   gap: 1.8rem;
   padding-top: 1rem;
+  align-items: center;
 }
 
 .footer-logo {
