@@ -376,6 +376,12 @@ footer {
   color:white;
 }
 
+.our-commitment-image {
+  width:100%;
+  margin-top:8rem;
+  border-radius: 10px;
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 15px;
