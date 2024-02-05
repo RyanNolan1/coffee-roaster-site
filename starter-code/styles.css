@@ -386,7 +386,7 @@ footer {
 .our-commitment {
   display:flex;
   flex-direction:column;
-  gap:3rem;
+  gap:4rem;
   padding:8rem 0;
 }
 
@@ -396,7 +396,7 @@ footer {
 }
 
 .our-commitment-title {
-  padding-bottom:3rem;
+  padding-bottom:2rem;
   color:#333D4B;
 }
 
@@ -592,6 +592,11 @@ footer {
   .about-us-header {
     background-image: url("./assets/about/tablet/image-hero-whitecup.jpg");
   }
+
+
+  .our-commitment-image {
+    content:url("./assets/about/tablet/image-commitment.jpg")
+  }
 }
 
 @media (min-width: 1200px) {
@@ -730,6 +735,10 @@ footer {
 
   .about-us-header {
     background-image: url("./assets/about/desktop/image-hero-whitecup.jpg")
+  }
+
+  .our-commitment-image {
+    content:url("./assets/about/desktop/image-commitment.jpg")
   }
 }
 
