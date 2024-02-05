@@ -593,9 +593,20 @@ footer {
     background-image: url("./assets/about/tablet/image-hero-whitecup.jpg");
   }
 
+  .our-commitment {
+    flex-direction: row;
+  }
 
   .our-commitment-image {
     content:url("./assets/about/tablet/image-commitment.jpg")
+  }
+
+  .our-commitment-container h5 {
+    text-align: left;
+  }
+
+  .our-commitment-container p {
+    text-align: left;
   }
 }
 
@@ -739,6 +750,10 @@ footer {
 
   .our-commitment-image {
     content:url("./assets/about/desktop/image-commitment.jpg")
+  }
+
+  .our-commitment {
+    align-items: center;
   }
 }
 
