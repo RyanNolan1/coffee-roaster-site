@@ -368,6 +368,10 @@ footer {
   align-items: center;
 }
 
+.about-us-header {
+  background-image: url("./assets/about/mobile/image-hero-whitecup.jpg");
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 15px;
@@ -556,6 +560,10 @@ footer {
   .social-icons {
     padding-top:2rem;
   }
+
+  .about-us-header {
+    background-image: url("./assets/about/tablet/image-hero-whitecup.jpg");
+  }
 }
 
 @media (min-width: 1200px) {
@@ -690,6 +698,10 @@ footer {
 
   .footer-nav a {
     flex-shrink: 0;
+  }
+
+  .about-us-header {
+    background-image: url("./assets/about/desktop/image-hero-whitecup.jpg")
   }
 }
 
