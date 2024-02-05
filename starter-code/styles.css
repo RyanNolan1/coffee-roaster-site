@@ -75,6 +75,13 @@ h4 {
   color: #fdd6ba;
 }
 
+h5 {
+  font-size:2rem;
+  line-height: 2rem;
+  font-family: "Fraunces", serif;
+  text-align: center;
+}
+
 p {
   font-family: "Barlow", sans-serif;
   line-height: 1.625rem;
@@ -376,10 +383,21 @@ footer {
   color:white;
 }
 
+.our-commitment {
+  display:flex;
+  flex-direction:column;
+  gap:3rem;
+  padding:8rem 0;
+}
+
 .our-commitment-image {
   width:100%;
-  margin-top:8rem;
   border-radius: 10px;
+}
+
+.our-commitment-title {
+  padding-bottom:3rem;
+  color:#333D4B;
 }
 
 @media (min-width: 768px) {
