@@ -404,7 +404,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 8rem;
-  margin-top:2rem;
+  margin-top: 2rem;
 }
 
 .quality-content-section h2,
@@ -414,7 +414,7 @@ footer {
 
 .quality-content-container img {
   border-radius: 10px;
-  width:100%;
+  width: 100%;
   transform: translateY(-4rem);
 }
 
@@ -432,11 +432,10 @@ footer {
 }
 
 .quality-content-text {
-  display:flex;
-  flex-direction:column;
-  gap:2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-
 
 .headquarters-section {
   display: flex;
@@ -459,13 +458,13 @@ footer {
 }
 
 .headquarters-image {
-  padding-bottom:2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .location-info {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 
 .location-info p {
@@ -473,15 +472,15 @@ footer {
 }
 
 .location-info h2 {
-  color:#333D4B;
-  padding-bottom:1.5rem;
+  color: #333d4b;
+  padding-bottom: 1.5rem;
 }
 
 .plan-header {
   background-image: url("./assets/plan/mobile/image-hero-blackcup.jpg");
-  padding-bottom:8rem;
-  padding-top:8rem;
-  margin-bottom:8rem;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .how-it-works-plan {
@@ -490,21 +489,20 @@ footer {
   gap: 2rem;
   align-items: center;
   padding-bottom: 8rem;
-  padding-top:6.5rem;
-  background-color: #2C343E;
+  padding-top: 6.5rem;
+  background-color: #2c343e;
   border-radius: 10px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .how-it-works-plan h3 {
-color:white;
+  color: white;
 }
 
 .how-it-works-plan p {
-  color:white;
-  }
-
-
-
+  color: white;
+}
 
 @media (min-width: 768px) {
   body {
@@ -715,26 +713,31 @@ color:white;
   }
 
   .quality-content {
-    width:90%;
-    margin:0 auto;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .quality-content-container img {
-    content: url("./assets/about/tablet/image-quality.jpg")
+    content: url("./assets/about/tablet/image-quality.jpg");
   }
 
   .headquarters-container {
     flex-direction: row;
-    width:100%;
+    width: 100%;
   }
 
   .headquarters-section {
     align-items: start;
-    max-width:65.3125rem;
+    max-width: 65.3125rem;
   }
 
   .location-info {
     align-items: start;
+  }
+
+  .how-it-works-plan {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -888,17 +891,17 @@ color:white;
   }
 
   .quality-content-container img {
-    content: url("./assets/about/desktop/image-quality.jpg")
+    content: url("./assets/about/desktop/image-quality.jpg");
   }
 
   .quality-content {
     display: flex;
     flex-direction: row-reverse;
-    gap:8rem;
-}
+    gap: 8rem;
+  }
 
   .quality-content-text {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -909,13 +912,13 @@ color:white;
   }
 
   .location-info {
-    width:100%;
+    width: 100%;
   }
 
   .headquarters-section {
     align-items: start;
-    max-width:65.3125rem;
-    margin:0 auto;
+    max-width: 65.3125rem;
+    margin: 0 auto;
   }
 }
 
