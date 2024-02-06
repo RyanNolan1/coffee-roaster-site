@@ -514,6 +514,13 @@ footer {
 
 .question-and-arrow {
   display:flex;
+  justify-content: space-between;
+}
+
+.question-and-arrow h3 {
+color:#83888F;
+text-align: left;
+max-width:15rem;
 }
 
 .options {
