@@ -437,7 +437,7 @@ footer {
 }
 
 
-.headquarters-sectiom {
+.headquarters-section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -453,13 +453,9 @@ footer {
   border-radius: 10px;
 }
 
-/* .how-it-works h3 {
+.headquarters-section h3 {
   color: #83888f;
-} */
-
-/* .how-it-works-container h3 {
-  color: rgb(51, 61, 75);
-} */
+}
 
 .location-info {
   display: flex;
