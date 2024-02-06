@@ -440,7 +440,7 @@ footer {
 .headquarters-section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
   padding-bottom: 8rem;
 }
@@ -455,6 +455,10 @@ footer {
 
 .headquarters-section h3 {
   color: #83888f;
+}
+
+.headquarters-image {
+  padding-bottom:2.5rem;
 }
 
 .location-info {
