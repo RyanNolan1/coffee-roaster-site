@@ -28,13 +28,13 @@ header {
   color: #fefcf7;
   font-family: "Fraunces", serif;
   padding: 1rem 2rem 1rem;
-  transition:0.3s;
-  border-radius: 10px;;
+  transition: 0.3s;
+  border-radius: 10px;
 }
 
 .green-button:hover {
-  background: #66D2CF;
-  cursor:pointer;
+  background: #66d2cf;
+  cursor: pointer;
 }
 
 header p {
@@ -54,8 +54,8 @@ h1 {
 
 h2 {
   font-family: "Fraunces", serif;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
   text-align: center;
 }
 
@@ -75,6 +75,13 @@ h4 {
   color: #fdd6ba;
 }
 
+h5 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: "Fraunces", serif;
+  text-align: center;
+}
+
 p {
   font-family: "Barlow", sans-serif;
   line-height: 1.625rem;
@@ -83,7 +90,8 @@ p {
 }
 
 a {
-  transition:0.4s;
+  transition: 0.4s;
+  text-decoration: none;
 }
 
 .choose-content {
@@ -262,12 +270,11 @@ footer {
 }
 
 .footer-links {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
 }
-
 
 .social-icons {
   display: flex;
@@ -293,11 +300,11 @@ footer {
 }
 
 .header-nav a:hover {
-  color:#333D4B;
+  color: #333d4b;
 }
 
 .footer-nav a:hover {
-  color:#fefcf7;
+  color: #fefcf7;
 }
 
 .social-icons a svg path {
@@ -305,7 +312,7 @@ footer {
 }
 
 .social-icons a:hover svg path {
-  fill:#fdd6ba;
+  fill: #fdd6ba;
 }
 
 .header-logo {
@@ -367,6 +374,111 @@ footer {
   margin: 0 auto;
   align-items: center;
 }
+
+.about-us-header {
+  background-image: url("./assets/about/mobile/image-hero-whitecup.jpg");
+}
+
+.about-us-title {
+  color: white;
+}
+
+.our-commitment {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 8rem 0;
+}
+
+.our-commitment-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.our-commitment-title {
+  padding-bottom: 2rem;
+  color: #333d4b;
+}
+
+.quality-content-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+  margin-top:2rem;
+}
+
+.quality-content-section h2,
+.quality-content-section p {
+  color: white;
+}
+
+.quality-content-container img {
+  border-radius: 10px;
+  width:100%;
+  transform: translateY(-4rem);
+}
+
+.quality-content-container {
+  padding: 0rem 1.5rem 3rem 1.5rem;
+  background: #2c343e;
+  border-radius: 10px;
+  flex-direction: column;
+  display: flex;
+}
+
+.quality-content {
+  flex-direction: column;
+  display: flex;
+}
+
+.quality-content-text {
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+}
+
+
+.headquarters-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+.headquarters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  border-radius: 10px;
+}
+
+.headquarters-section h3 {
+  color: #83888f;
+}
+
+.headquarters-image {
+  padding-bottom:2.5rem;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.location-info p {
+  max-width: 10rem;
+}
+
+.location-info h2 {
+  color:#333D4B;
+  padding-bottom:1.5rem;
+}
+
+
+
 
 @media (min-width: 768px) {
   body {
@@ -546,15 +658,57 @@ footer {
     padding-top: 4rem;
   }
 
-
   .footer-links {
     flex-direction: row;
-    gap:2rem;
+    gap: 2rem;
     flex-grow: 1;
   }
 
   .social-icons {
-    padding-top:2rem;
+    padding-top: 2rem;
+  }
+
+  .about-us-header {
+    background-image: url("./assets/about/tablet/image-hero-whitecup.jpg");
+  }
+
+  .our-commitment {
+    flex-direction: row;
+  }
+
+  .our-commitment-image {
+    content: url("./assets/about/tablet/image-commitment.jpg");
+  }
+
+  .our-commitment-container h5 {
+    text-align: left;
+  }
+
+  .our-commitment-container p {
+    text-align: left;
+  }
+
+  .quality-content {
+    width:90%;
+    margin:0 auto;
+  }
+
+  .quality-content-container img {
+    content: url("./assets/about/tablet/image-quality.jpg")
+  }
+
+  .headquarters-container {
+    flex-direction: row;
+    width:100%;
+  }
+
+  .headquarters-section {
+    align-items: start;
+    max-width:65.3125rem;
+  }
+
+  .location-info {
+    align-items: start;
   }
 }
 
@@ -673,23 +827,69 @@ footer {
   }
 
   .footer-nav {
-    flex-direction:row;
-    padding:0 4rem;
-    gap:6rem;
+    flex-direction: row;
+    padding: 0 4rem;
+    gap: 6rem;
   }
 
   .footer-logo {
-    padding:0;
+    padding: 0;
   }
 
   .social-icons {
-    gap:1.4rem;
+    gap: 1.4rem;
     align-items: center;
-    padding:0;
+    padding: 0;
   }
 
   .footer-nav a {
     flex-shrink: 0;
+  }
+
+  .about-us-header {
+    background-image: url("./assets/about/desktop/image-hero-whitecup.jpg");
+  }
+
+  .our-commitment-image {
+    content: url("./assets/about/desktop/image-commitment.jpg");
+  }
+
+  .our-commitment {
+    align-items: center;
+    max-width: 69.375rem;
+    margin: 0 auto;
+    gap: 8rem;
+  }
+
+  .quality-content-container img {
+    content: url("./assets/about/desktop/image-quality.jpg")
+  }
+
+  .quality-content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap:8rem;
+}
+
+  .quality-content-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .quality-content-text p {
+    text-align: left;
+  }
+
+  .location-info {
+    width:100%;
+  }
+
+  .headquarters-section {
+    align-items: start;
+    max-width:65.3125rem;
+    margin:0 auto;
   }
 }
 
