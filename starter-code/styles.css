@@ -483,7 +483,7 @@ footer {
   margin-bottom: 8rem;
 }
 
-.how-it-works-container {
+.how-it-works-plan-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -494,6 +494,7 @@ footer {
   border-radius: 10px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  max-width:90rem;
 }
 
 .how-it-works-plan h3 {
@@ -735,13 +736,20 @@ footer {
     align-items: start;
   }
 
-  .how-it-works-container {
+  .how-it-works-plan-container {
     padding-left:2.5rem;
     padding-right:2.5rem;
   }
 
   .plan-header {
     background-image: url("./assets/plan/tablet/image-hero-blackcup.jpg");
+  }
+
+  .how-it-works-plan-container {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
   }
 }
 
