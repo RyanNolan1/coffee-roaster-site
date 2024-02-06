@@ -695,6 +695,20 @@ footer {
   .quality-content-container img {
     content: url("./assets/about/tablet/image-quality.jpg")
   }
+
+  .headquarters-container {
+    flex-direction: row;
+    width:100%;
+  }
+
+  .headquarters-section {
+    align-items: start;
+    max-width:65.3125rem;
+  }
+
+  .location-info {
+    align-items: start;
+  }
 }
 
 @media (min-width: 1200px) {
