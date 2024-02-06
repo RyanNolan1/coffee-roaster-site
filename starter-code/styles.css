@@ -484,6 +484,25 @@ footer {
   margin-bottom:8rem;
 }
 
+.how-it-works-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 8rem;
+  padding-top:6.5rem;
+  background-color: #2C343E;
+  border-radius: 10px;
+}
+
+.how-it-works-plan h3 {
+color:white;
+}
+
+.how-it-works-plan p {
+  color:white;
+  }
+
 
 
 
