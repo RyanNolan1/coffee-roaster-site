@@ -436,6 +436,44 @@ footer {
   gap:2rem;
 }
 
+
+.headquarters-sectiom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+.headquarters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  border-radius: 10px;
+}
+
+/* .how-it-works h3 {
+  color: #83888f;
+} */
+
+/* .how-it-works-container h3 {
+  color: rgb(51, 61, 75);
+} */
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.location-info p {
+  max-width: 20rem;
+}
+
+
+
+
 @media (min-width: 768px) {
   body {
     font-size: 15px;
