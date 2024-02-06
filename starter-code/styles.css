@@ -483,7 +483,7 @@ footer {
   margin-bottom: 8rem;
 }
 
-.how-it-works-plan {
+.how-it-works-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -735,9 +735,9 @@ footer {
     align-items: start;
   }
 
-  .how-it-works-plan {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .how-it-works-container {
+    padding-left:2.5rem;
+    padding-right:2.5rem;
   }
 }
 
@@ -919,6 +919,16 @@ footer {
     align-items: start;
     max-width: 65.3125rem;
     margin: 0 auto;
+  }
+
+  .how-it-works-plan {
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+  }
+
+  .how-it-works-container {
+    max-width:90rem;
+    margin:0 auto;
   }
 }
 
