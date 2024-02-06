@@ -739,6 +739,10 @@ footer {
     padding-left:2.5rem;
     padding-right:2.5rem;
   }
+
+  .plan-header {
+    background-image: url("./assets/plan/tablet/image-hero-blackcup.jpg");
+  }
 }
 
 @media (min-width: 1200px) {
@@ -926,6 +930,10 @@ footer {
     padding-right:1.5rem;
     max-width:90rem;
     margin:0 auto;
+  }
+
+  .plan-header {
+    background-image: url("./assets/plan/desktop/image-hero-blackcup.jpg");
   }
 }
 
