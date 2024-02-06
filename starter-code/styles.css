@@ -460,15 +460,16 @@ footer {
 .location-info {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items:center;
 }
 
 .location-info p {
-  max-width: 20rem;
+  max-width: 10rem;
 }
 
 .location-info h2 {
   color:#333D4B;
+  padding-bottom:1.5rem;
 }
 
 
