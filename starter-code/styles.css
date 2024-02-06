@@ -404,7 +404,6 @@ footer {
   flex-direction: column;
   margin-bottom: 8rem;
   margin-top:2rem;
-  position: relative;
 }
 
 .quality-content-section h2,
@@ -415,23 +414,26 @@ footer {
 .quality-content-container img {
   border-radius: 10px;
   width:100%;
-  margin-bottom:3rem;
+  transform: translateY(-4rem);
 }
 
 .quality-content-container {
-  padding: 0rem 1.5rem 0rem 1.5rem;
+  padding: 0rem 1.5rem 3rem 1.5rem;
   background: #2c343e;
   border-radius: 10px;
-  gap: 1.5rem;
   flex-direction: column;
   display: flex;
 }
 
 .quality-content-container div {
-  transform: translateY(-4rem);
-  gap: 1.5rem;
   flex-direction: column;
   display: flex;
+}
+
+.quality-content-text {
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
 }
 
 @media (min-width: 768px) {
@@ -641,6 +643,15 @@ footer {
   .our-commitment-container p {
     text-align: left;
   }
+
+  .quality-content-container div {
+    width:90%;
+    margin:0 auto;
+  }
+
+  .quality-content-container img {
+    content: url("./assets/about/tablet/image-quality.jpg")
+  }
 }
 
 @media (min-width: 1200px) {
@@ -791,6 +802,15 @@ footer {
     margin: 0 auto;
     gap: 8rem;
   }
+
+  .quality-content-container img {
+    content: url("./assets/about/desktop/image-quality.jpg")
+  }
+
+  .quality-content-container div {
+    display: flex;
+    flex-direction: row-reverse;
+}
 }
 
 @media (min-width: 1440px) {
