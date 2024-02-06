@@ -505,6 +505,37 @@ footer {
   color: white;
 }
 
+.question-container {
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  padding-bottom:8rem;
+}
+
+.question-and-arrow {
+  display:flex;
+}
+
+.options {
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+
+.option {
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+  align-items:start;
+  padding:2rem;
+  background:#F4F1EB;
+  border-radius:10px;
+}
+
+.option p {
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 15px;
