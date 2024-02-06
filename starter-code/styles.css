@@ -880,6 +880,16 @@ footer {
   .quality-content-text p {
     text-align: left;
   }
+
+  .location-info {
+    width:100%;
+  }
+
+  .headquarters-section {
+    align-items: start;
+    max-width:65.3125rem;
+    margin:0 auto;
+  }
 }
 
 @media (min-width: 1440px) {
