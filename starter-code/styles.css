@@ -425,7 +425,7 @@ footer {
   display: flex;
 }
 
-.quality-content-container div {
+.quality-content {
   flex-direction: column;
   display: flex;
 }
@@ -644,7 +644,7 @@ footer {
     text-align: left;
   }
 
-  .quality-content-container div {
+  .quality-content {
     width:90%;
     margin:0 auto;
   }
@@ -807,10 +807,22 @@ footer {
     content: url("./assets/about/desktop/image-quality.jpg")
   }
 
-  .quality-content-container div {
+  .quality-content {
     display: flex;
     flex-direction: row-reverse;
+    gap:8rem;
 }
+
+  .quality-content-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .quality-content-text p {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1440px) {
