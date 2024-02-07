@@ -522,6 +522,7 @@ footer {
 .question-and-arrow {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .question-and-arrow h3 {
