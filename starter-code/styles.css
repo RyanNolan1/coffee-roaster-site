@@ -1071,6 +1071,10 @@ label:focus-within p {
   .green-arrow {
     transform:rotate(180deg)
   }
+
+  .question-container {
+    gap:4rem;
+  }
 }
 
 @media (min-width: 1440px) {
