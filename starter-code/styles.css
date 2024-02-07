@@ -1057,6 +1057,9 @@ label:focus-within p {
     display: flex;
     flex-direction: column;
     gap:2rem;
+    height:fit-content;
+    position:sticky;
+    top:140px;
   }
   
   .questions-nav a {
@@ -1078,6 +1081,15 @@ label:focus-within p {
 
   .questions-nav a:hover {
     cursor:pointer;
+  }
+
+  #preferences,
+  #bean-type,
+  #quantity,
+  #deliveries,
+  #grind-option {
+    padding-top: 106.875px;
+    margin-top: -106.875px;
   }
 
   .green-arrow {
