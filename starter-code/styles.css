@@ -554,7 +554,7 @@ label {
 
 label:hover {
   cursor:pointer;
-  background-color:#0E8784;
+  background:#0E8784;
 }
 
 label:hover h3,
@@ -562,8 +562,13 @@ label:hover p {
   color:white;
 }
 
-label:focus {
-  background-color:green;
+label:focus-within {
+  background:#0E8784;
+}
+
+label:focus-within h3,
+label:focus-within p {
+  color:white;
 }
 
 @media (min-width: 768px) {
