@@ -92,33 +92,37 @@
     <div class="container">
       <section class="questions">
         <div class="questions-nav-container"">
-          <nav class="questions-nav">
-            <a href="#preferences" tabindex="0">
-              <h3>01</h3>
-              <h3>Preferences</h3>
-            </a>
-            <a href="#bean-type" tabindex="1">
-              <h3>02</h3>
-              <h3>Bean Type</h3>
-            </a>
-            <a href="#quantity" tabindex="2">
-              <h3>03</h3>
-              <h3>Quantity</h3>
-            </a>
-            <a href="#grind-option" tabindex="3">
-              <h3>04</h3>
-              <h3>Grind Option</h3>
-            </a>
-            <a href="#deliveries" tabindex="4">
-              <h3>05</h3>
-              <h3>Deliveries</h3>
-            </a>
-          </nav>
-        </div>
+        <nav class="questions-nav">
+          <a href="#preferences" tabindex="0">
+            <h3>01</h3>
+            <h3>Preferences</h3>
+          </a>
+          <a href="#bean-type" tabindex="1">
+            <h3>02</h3>
+            <h3>Bean Type</h3>
+          </a>
+          <a href="#quantity" tabindex="2">
+            <h3>03</h3>
+            <h3>Quantity</h3>
+          </a>
+          <a href="#grind-option" tabindex="3">
+            <h3>04</h3>
+            <h3>Grind Option</h3>
+          </a>
+          <a href="#deliveries" tabindex="4">
+            <h3>05</h3>
+            <h3>Deliveries</h3>
+          </a>
+        </nav>
         <div class="question-container">
-          <div id="preferences"  class="question-and-arrow">
+          <div id="preferences" class="question-and-arrow">
             <h6>How do you drink your coffee?</h6>
-            <svg class="green-arrow" width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="green-arrow"
+              width="19"
+              height="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
                 fill="#0E8784"
@@ -128,28 +132,38 @@
           </div>
           <div class="options">
             <form>
-            <label class="option">
-              <input type="radio" id="capsule"  name="preferences" />
-              <h3>Capsule</h3>
-              <p>Compatible with Nespresso systems and similar brewers</p>
-            </label>
+              <label class="option">
+                <input type="radio" id="capsule" name="preferences" />
+                <h3>Capsule</h3>
+                <p>Compatible with Nespresso systems and similar brewers</p>
+              </label>
 
-            <label class="option">
-              <input  type="radio" id="filter"  name="preferences" />
-              <h3>Filter</h3>
-              <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
-            </label>
+              <label class="option">
+                <input type="radio" id="filter" name="preferences" />
+                <h3>Filter</h3>
+                <p>
+                  For pour over or drip methods like Aeropress, Chemex, and V60
+                </p>
+              </label>
 
-            <label class="option">
-              <input type="radio" id="espresso"  name="preferences" />
-              <h3>Espresso</h3>
-              <p>Dense and finely ground beans for an intense, flavorful experience</p>
-            </label>
-          </form>
+              <label class="option">
+                <input type="radio" id="espresso" name="preferences" />
+                <h3>Espresso</h3>
+                <p>
+                  Dense and finely ground beans for an intense, flavorful
+                  experience
+                </p>
+              </label>
+            </form>
           </div>
           <div id="bean-type" class="question-and-arrow">
             <h6>What type of coffee?</h6>
-            <svg class="green-arrow" width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="green-arrow"
+              width="19"
+              height="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
                 fill="#0E8784"
@@ -159,28 +173,41 @@
           </div>
           <div class="options">
             <form>
-            <label class="option">
-              <input type="radio" id="single-origin"  name="bean-type" />
-              <h3>Single Origin</h3>
-              <p>Distinct, high quality coffee from a specific family-owned farm</p>
-            </label>
+              <label class="option">
+                <input type="radio" id="single-origin" name="bean-type" />
+                <h3>Single Origin</h3>
+                <p>
+                  Distinct, high quality coffee from a specific family-owned
+                  farm
+                </p>
+              </label>
 
-            <label class="option">
-              <input type="radio" id="decaf"  name="bean-type" />
-              <h3>Decaf</h3>
-              <p>Just like regular coffee, except the caffeine has been removed</p>
-            </label>
+              <label class="option">
+                <input type="radio" id="decaf" name="bean-type" />
+                <h3>Decaf</h3>
+                <p>
+                  Just like regular coffee, except the caffeine has been removed
+                </p>
+              </label>
 
-            <label class="option">
-              <input type="radio" id="blended"  name="bean-type" />
-              <h3>Blended</h3>
-              <p>Combination of two or three dark roasted beans of organic coffees</p>
-            </label>
-          </form>
+              <label class="option">
+                <input type="radio" id="blended" name="bean-type" />
+                <h3>Blended</h3>
+                <p>
+                  Combination of two or three dark roasted beans of organic
+                  coffees
+                </p>
+              </label>
+            </form>
           </div>
           <div id="quantity" class="question-and-arrow">
             <h6>How much would you like?</h6>
-            <svg class="green-arrow" width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="green-arrow"
+              width="19"
+              height="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
                 fill="#0E8784"
@@ -189,28 +216,40 @@
             </svg>
           </div>
           <div class="options">
-<form>
-            <label class="option">
-              <input type="radio" id="250g"  name="quantity" />
-              <h3>250g</h3>
-              <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-            </label>
-            <label class="option">
-              <input type="radio" id="500g"  name="quantity" />
-              <h3>500g</h3>
-              <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
-            </label>
+            <form>
+              <label class="option">
+                <input type="radio" id="250g" name="quantity" />
+                <h3>250g</h3>
+                <p>
+                  Perfect for the solo drinker. Yields about 12 delicious cups.
+                </p>
+              </label>
+              <label class="option">
+                <input type="radio" id="500g" name="quantity" />
+                <h3>500g</h3>
+                <p>
+                  Perfect option for a couple. Yields about 40 delectable cups.
+                </p>
+              </label>
 
-            <label class="option">
-              <input type="radio" id="1000g"  name="quantity" />
-              <h3>1000g</h3>
-              <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
-            </label>
-          </form>
+              <label class="option">
+                <input type="radio" id="1000g" name="quantity" />
+                <h3>1000g</h3>
+                <p>
+                  Perfect for offices and events. Yields about 90 delightful
+                  cups.
+                </p>
+              </label>
+            </form>
           </div>
           <div id="grind-option" class="question-and-arrow">
             <h6>Want us to grind them?</h6>
-            <svg class="green-arrow" width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="green-arrow"
+              width="19"
+              height="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
                 fill="#0E8784"
@@ -220,28 +259,37 @@
           </div>
           <div class="options">
             <form>
-            <label class="option">
-              <input type="radio" id="wholebean"  name="grind-option" />
-              <h3>Wholebean</h3>
-              <p>Best choice if you cherish the full sensory experience</p>
-            </label>
+              <label class="option">
+                <input type="radio" id="wholebean" name="grind-option" />
+                <h3>Wholebean</h3>
+                <p>Best choice if you cherish the full sensory experience</p>
+              </label>
 
-            <label class="option">
-              <input type="radio" id="filter-two"  name="grind-option" />
-              <h3>Filter</h3>
-              <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
-            </label>
+              <label class="option">
+                <input type="radio" id="filter-two" name="grind-option" />
+                <h3>Filter</h3>
+                <p>
+                  For drip or pour-over coffee methods such as V60 or Aeropress
+                </p>
+              </label>
 
-            <label class="option">
-              <input type="radio" id="cafetiere"  name="grind-option" />
-              <h3>Cafetiére</h3>
-              <p>Course ground beans specially suited for french press coffee</p>
-            </label>
-          </form>
+              <label class="option">
+                <input type="radio" id="cafetiere" name="grind-option" />
+                <h3>Cafetiére</h3>
+                <p>
+                  Course ground beans specially suited for french press coffee
+                </p>
+              </label>
+            </form>
           </div>
           <div id="deliveries" class="question-and-arrow">
             <h6>How often should we deliver?</h6>
-            <svg class="green-arrow" width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="green-arrow"
+              width="19"
+              height="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
                 fill="#0E8784"
@@ -251,26 +299,25 @@
           </div>
           <div class="options">
             <form>
-            <label class="option">
-              <input type="radio" id="every-week"  name="deliveries" />
-              <h3>Every Week</h3>
-              <p>$7.20 per shipment. Includes free first-class shipping.</p>
-            </label>
+              <label class="option">
+                <input type="radio" id="every-week" name="deliveries" />
+                <h3>Every Week</h3>
+                <p>$7.20 per shipment. Includes free first-class shipping.</p>
+              </label>
 
-            <label class="option">
-              <input type="radio" id="every-two-weeks"  name="deliveries" />
-              <h3>Every 2 weeks</h3>
-              <p>$9.60 per shipment. Includes free priority shipping.</p>
-            </label>
+              <label class="option">
+                <input type="radio" id="every-two-weeks" name="deliveries" />
+                <h3>Every 2 weeks</h3>
+                <p>$9.60 per shipment. Includes free priority shipping.</p>
+              </label>
 
-            <label class="option">
-              <input type="radio" id="every-month"  name="deliveries" />
-              <h3>Every month</h3>
-              <p>$12.00 per shipment. Includes free priority shipping.</p>
-            </label>
-          </form>
+              <label class="option">
+                <input type="radio" id="every-month" name="deliveries" />
+                <h3>Every month</h3>
+                <p>$12.00 per shipment. Includes free priority shipping.</p>
+              </label>
+            </form>
           </div>
-          
         </div>
       </section>
       <footer>

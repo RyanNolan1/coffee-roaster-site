@@ -1064,8 +1064,10 @@ label:has([type="radio"]:checked) p {
   }
 
   .questions-nav-container {
-    display:flex;
-  }
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 
   .questions-nav {
     display: flex;
