@@ -727,6 +727,7 @@ label:has([type="radio"]:checked) p {
 
   .header-nav-section {
     padding: 2.5rem 2.5rem;
+    z-index:3
   }
 
   .header-nav {
