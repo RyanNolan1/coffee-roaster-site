@@ -548,13 +548,15 @@ footer {
 }
 
 .option {
-  display: flex;
-  flex-direction: column;
   align-items: start;
   padding: 2rem;
   background: #f4f1eb;
   border-radius: 10px;
   width:100%;
+}
+
+.option h3 {
+  text-align: left;
 }
 
 .option p {
