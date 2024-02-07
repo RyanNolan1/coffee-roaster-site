@@ -1067,6 +1067,10 @@ label:focus-within p {
   .questions-nav a:hover {
     cursor:pointer;
   }
+
+  .green-arrow {
+    transform:rotate(180deg)
+  }
 }
 
 @media (min-width: 1440px) {
