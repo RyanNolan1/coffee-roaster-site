@@ -1022,6 +1022,10 @@ label:focus-within p {
   .plan-header {
     background-image: url("./assets/plan/desktop/image-hero-blackcup.jpg");
   }
+
+  .question-container {
+    max-width:45.625rem;
+  }
 }
 
 @media (min-width: 1440px) {
