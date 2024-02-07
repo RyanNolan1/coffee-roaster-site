@@ -1033,11 +1033,12 @@ label:focus-within p {
 
   .questions {
     display:flex;
+    padding:0 4rem;
+    justify-content: space-between;
   }
 
   .questions-nav-container {
     display:flex;
-    width:100%;
   }
 
   .questions-nav {
