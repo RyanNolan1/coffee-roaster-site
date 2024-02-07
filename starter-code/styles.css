@@ -565,10 +565,10 @@ footer {
   padding-top:1rem;
 }
 
-/* input[type="radio"] {
+input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
-} */
+}
 
 label {
   transition:0.4s;
@@ -579,12 +579,12 @@ label:hover {
   background:#FDD6BA;
 }
 
-input:checked label {
-  background:#0E8784;
+label:has([type="radio"]:checked) {
+  background-color:#0E8784;
 }
 
-input:checked h3,
-input:checked p {
+label:has([type="radio"]:checked) h3,
+label:has([type="radio"]:checked) p {
   color:white;
 }
 
