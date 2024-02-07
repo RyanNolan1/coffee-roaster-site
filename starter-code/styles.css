@@ -25,6 +25,12 @@ header {
   align-items: center;
 }
 
+form {
+  display:flex;
+  gap:1rem;
+  flex-direction:column;
+}
+
 .green-button {
   border: none;
   background: rgb(14, 135, 132);
@@ -845,6 +851,10 @@ label:focus-within p {
 
   .question-and-arrow h3 {
     max-width:100%;
+  }
+
+  form {
+    flex-direction: row;
   }
 }
 
