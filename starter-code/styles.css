@@ -543,6 +543,29 @@ footer {
   text-align: left;
 }
 
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+label {
+  transition:0.4s;
+}
+
+label:hover {
+  cursor:pointer;
+  background-color:#0E8784;
+}
+
+label:hover h3,
+label:hover p {
+  color:white;
+}
+
+label:focus {
+  background-color:green;
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 15px;
