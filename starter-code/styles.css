@@ -567,6 +567,10 @@ label:focus-within p {
   color:white;
 }
 
+.questions-nav-container {
+  display:none;
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 15px;
@@ -1025,6 +1029,30 @@ label:focus-within p {
 
   .question-container {
     max-width:45.625rem;
+  }
+
+  .questions {
+    display:flex;
+  }
+
+  .questions-nav-container {
+    display:flex;
+    width:100%;
+  }
+
+  .questions-nav {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+  }
+
+  .questions-nav a {
+    display:flex;
+    gap:2rem;
+  }
+
+  .questions-nav a:hover {
+    cursor:pointer;
   }
 }
 
