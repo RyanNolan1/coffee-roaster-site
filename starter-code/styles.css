@@ -532,15 +532,16 @@ footer {
 .option {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   align-items: start;
   padding: 2rem;
   background: #f4f1eb;
   border-radius: 10px;
+  width:100%;
 }
 
 .option p {
   text-align: left;
+  padding-top:1rem;
 }
 
 input[type="checkbox"] {
@@ -815,11 +816,15 @@ label:focus-within p {
 
   .options {
     flex-direction: row;
+    gap:0.625rem;
   }
 
   .option {
-    padding: 2rem 2rem 6rem 2rem;
-    gap:2rem;
+    padding: 2rem 2rem 4rem 2rem;
+  }
+
+  .option p {
+    padding-top:2rem;
   }
 
   .question-and-arrow h3 {
