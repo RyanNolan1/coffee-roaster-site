@@ -8,6 +8,10 @@ body {
   background: #fefcf7;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   margin: 0 auto;
   background-image: url("./assets/home/mobile/image-hero-coffeepress.jpg");
