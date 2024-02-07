@@ -1046,10 +1046,22 @@ label:focus-within p {
     flex-direction: column;
     gap:2rem;
   }
-
+  
   .questions-nav a {
     display:flex;
+    padding-bottom:2rem;
     gap:2rem;
+    color:#83888F;
+    border-bottom:1px solid #333D4B;
+    opacity: 40%;
+  }
+
+  .questions-nav a:focus h3:first-child {
+    color:#0E8784;
+  }
+
+  .questions-nav a:focus {
+    opacity: 100%;
   }
 
   .questions-nav a:hover {
