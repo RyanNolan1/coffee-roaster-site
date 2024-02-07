@@ -565,10 +565,10 @@ footer {
   padding-top:1rem;
 }
 
-input[type="checkbox"] {
+/* input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
-}
+} */
 
 label {
   transition:0.4s;
@@ -579,12 +579,12 @@ label:hover {
   background:#FDD6BA;
 }
 
-label:focus-within {
+input:checked label {
   background:#0E8784;
 }
 
-label:focus-within h3,
-label:focus-within p {
+input:checked h3,
+input:checked p {
   color:white;
 }
 
@@ -1084,7 +1084,7 @@ label:focus-within p {
     opacity: 40%;
   }
 
-  .questions-nav a:focus h3:first-child {
+  .questions-nav a:checked h3:first-child {
     color:#0E8784;
   }
 
