@@ -555,11 +555,6 @@ footer {
   transition: height 0.5s ease, opacity 0.5s ease;
 }
 
-.expand {
-  height:auto;
-  opacity:1;
-  visibility: visible;
-}
 
 .option {
   align-items: start;
@@ -571,6 +566,12 @@ footer {
   height:0;
   opacity:0;
   visibility: hidden;
+}
+
+.expand {
+  height:auto;
+  opacity:1;
+  visibility: visible;
 }
 
 .option h3 {
