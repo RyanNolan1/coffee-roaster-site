@@ -35,8 +35,6 @@ greenArrows.forEach((arrow, index) => {
   });
 
   function toggleOptions(index) {
-    options[index].style.height = "100%";
-    options[index].style.visibility = "visible";
-    options[index].style.opacity = "100%";
+    options[index].classList.toggle('expand');
   }
 });
