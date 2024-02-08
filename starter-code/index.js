@@ -3,6 +3,7 @@ const menuOverlay = document.querySelector(".mobile-menu-overlay");
 const questions = document.querySelectorAll(".question");
 const greenArrows = document.querySelectorAll(".green-arrow");
 const options = document.querySelectorAll(".options");
+const preferences = document.getElementsByName('preferences');
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -51,3 +52,10 @@ greenArrows.forEach((arrow, index) => {
     });
     options[index].classList.toggle("expand");
   }
+
+
+  preferences.forEach(preference => {
+    preference.addEventListener("click", function() {
+      toggleOptions(1)
+    })
+  })
