@@ -4,6 +4,10 @@ const questions = document.querySelectorAll(".question");
 const greenArrows = document.querySelectorAll(".green-arrow");
 const options = document.querySelectorAll(".options");
 const preferences = document.getElementsByName('preferences');
+const beanType = document.getElementsByName('bean-type');
+const quantity = document.getElementsByName('quantity');
+const grindOption = document.getElementsByName('grind-option');
+const deliveries = document.getElementsByName('deliveries');
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -57,5 +61,20 @@ greenArrows.forEach((arrow, index) => {
   preferences.forEach(preference => {
     preference.addEventListener("click", function() {
       toggleOptions(1)
+    })
+  })
+  beanType.forEach(bean => {
+    bean.addEventListener("click", function() {
+      toggleOptions(2)
+    })
+  })
+  quantity.forEach(quantity => {
+    quantity.addEventListener("click", function() {
+      toggleOptions(3)
+    })
+  })
+  grindOption.forEach(grind => {
+    grind.addEventListener("click", function() {
+      toggleOptions(4)
     })
   })
