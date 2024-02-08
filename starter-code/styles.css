@@ -566,12 +566,15 @@ footer {
   height:0;
   opacity:0;
   visibility: hidden;
+  transition: height 0.5s ease, opacity 0.5s ease;
 }
 
 .expand {
   height:auto;
   opacity:1;
   visibility: visible;
+  padding-top:2rem;
+  padding-bottom:2rem;
 }
 
 .option h3 {
@@ -609,6 +612,16 @@ label:has([type="radio"]:checked) p {
 .questions-nav {
   display:none;
 }
+
+.option h3 {
+  z-index:4;
+}
+
+.green-arrow {
+  z-index:4;
+}
+
+
 
 @media (min-width: 768px) {
   body {
@@ -1139,7 +1152,7 @@ label:has([type="radio"]:checked) p {
   }
 
   .question-container {
-    gap:4rem;
+    gap:2rem;
   }
 
   h6 {
