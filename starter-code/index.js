@@ -35,6 +35,7 @@ greenArrows.forEach((arrow, index) => {
   });
 
   function toggleOptions(index) {
+    arrow.classList.toggle('rotate');
     const option = options[index].querySelectorAll(".option");
     option.forEach(element => {
       element.classList.toggle('expand');

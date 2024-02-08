@@ -48,7 +48,12 @@ form {
 }
 
 .green-arrow:hover {
-  cursor:pointer
+  cursor:pointer;
+  transition:0.5s;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 header p {
@@ -552,7 +557,7 @@ footer {
   height:0;
   opacity:0;
   visibility: hidden;
-  transition: height 0.5s ease, opacity 0.5s ease;
+  transition: height 1s ease, opacity 1s ease;
 }
 
 
@@ -566,7 +571,7 @@ footer {
   height:0;
   opacity:0;
   visibility: hidden;
-  transition: height 0.5s ease, opacity 0.5s ease;
+  transition: height 1s ease, opacity 1s ease;
 }
 
 .expand {
