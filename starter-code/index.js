@@ -47,7 +47,7 @@ greenArrows.forEach((arrow, index) => {
   function toggleOptions(index) {
     const option = options[index].querySelectorAll(".option");
     option.forEach((element) => {
-      element.classList.toggle("expand"),
-        options[index].classList.toggle("expand");
+      element.classList.toggle("expand")
     });
+    options[index].classList.toggle("expand");
   }
