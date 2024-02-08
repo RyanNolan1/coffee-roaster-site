@@ -1,5 +1,6 @@
 const burgerNav = document.getElementById("burger-nav");
 const menuOverlay = document.querySelector(".mobile-menu-overlay");
+const questions = document.querySelectorAll(".question");
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -12,7 +13,6 @@ function toggleMenu() {
   }
 }
 
-const questions = document.querySelectorAll(".question");
 
 questions.forEach((question) => {
   question.addEventListener("click", increaseOpacity);
@@ -20,8 +20,9 @@ questions.forEach((question) => {
   function increaseOpacity() {
     questions.forEach((question) => {
       question.style.opacity = "40%";
+      question.querySelector(".question-number").style.color = "rgb(51, 61, 75)";
     });
-
     question.style.opacity = "100%";
+    question.querySelector(".question-number").style.color = "#0E8784";
   }
 });
