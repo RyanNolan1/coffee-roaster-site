@@ -47,6 +47,10 @@ form {
   cursor: pointer;
 }
 
+.green-arrow:hover {
+  cursor:pointer
+}
+
 header p {
   color: #fefcf7;
   text-align: center;
