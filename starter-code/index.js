@@ -33,19 +33,21 @@ questions.forEach((question) => {
   }
 });
 
-// Function to rotate the green arrows and display the answers on the plan page
+// Function to rotate the green arrows and toggle on click
 
 greenArrows.forEach((arrow, index) => {
   arrow.addEventListener("click", function () {
+    arrow.classList.toggle("rotate");
     toggleOptions(index);
   });
 
+// Function to toggle options visibility
+
   function toggleOptions(index) {
-    arrow.classList.toggle('rotate');
     const option = options[index].querySelectorAll(".option");
-    option.forEach(element => {
-      element.classList.toggle('expand');
-    })
-    options[index].classList.toggle('expand');
+    option.forEach((element) => {
+      element.classList.toggle("expand"),
+        options[index].classList.toggle("expand");
+    });
   }
 });
