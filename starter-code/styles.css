@@ -588,7 +588,7 @@ label:has([type="radio"]:checked) p {
   color:white;
 }
 
-.questions-nav-container {
+.questions-nav {
   display:none;
 }
 
@@ -1067,6 +1067,7 @@ label:has([type="radio"]:checked) p {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    gap:8rem;
 }
 
   .questions-nav {
@@ -1097,6 +1098,11 @@ label:has([type="radio"]:checked) p {
 
   .questions-nav a:hover {
     cursor:pointer;
+  }
+
+  .question h3 {
+    text-align: left;
+    text-wrap: nowrap;
   }
 
   #preferences,
