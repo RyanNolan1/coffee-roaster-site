@@ -40,6 +40,7 @@ greenArrows.forEach((arrow, index) => {
     arrow.classList.toggle("rotate");
     toggleOptions(index);
   });
+});
 
 // Function to toggle options visibility
 
@@ -50,4 +51,3 @@ greenArrows.forEach((arrow, index) => {
         options[index].classList.toggle("expand");
     });
   }
-});
