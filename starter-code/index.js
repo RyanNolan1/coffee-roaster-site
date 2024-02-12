@@ -6,7 +6,8 @@ const options = document.querySelectorAll(".options");
 const preferences = document.getElementsByName("preferences");
 const beanType = document.getElementsByName("bean-type");
 const quantity = document.getElementsByName("quantity");
-const grindOption = document.getElementsByName("grind-option");
+const grindOptions = document.getElementsByName("grind-option");
+const grindOption = document.getElementById("grind-option");
 const deliveries = document.getElementsByName("deliveries");
 const coffeeType = document.getElementById("coffee-type");
 const asOrUsing = document.getElementById("as-or-using");
@@ -75,10 +76,12 @@ preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
       coffeeType.innerHTML = `${preference.value}`
-      asOrUsing.innerHTML = "using"
+      asOrUsing.innerHTML = "using";
+      grindOption.style.display = "none";
     } else if (preference.value === "Filter" || preference.value === "Espresso" ){
       coffeeType.innerHTML  = `${preference.value}`
-      asOrUsing.innerHTML = "as"
+      asOrUsing.innerHTML = "as";
+      grindOption.style.display = "block";
     }
     showOptions(1);
     if (!greenArrowsArray[1].classList.contains("rotate")) {
@@ -102,7 +105,7 @@ quantity.forEach((quantity) => {
     }
   });
 });
-grindOption.forEach((grind) => {
+grindOptions.forEach((grind) => {
   grind.addEventListener("click", function () {
     showOptions(4);
     if (!greenArrowsArray[4].classList.contains("rotate")) {
