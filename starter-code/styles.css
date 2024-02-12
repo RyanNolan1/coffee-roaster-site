@@ -651,8 +651,13 @@ label:has([type="radio"]:checked) p {
 #order-text-coffee,
 #order-text-bean,
 #order-text-weight,
+#order-text-grind, 
 #order-text-delivery {
   color: #0e8784;
+}
+
+#ground-ala {
+display:none;
 }
 
 @media (min-width: 768px) {

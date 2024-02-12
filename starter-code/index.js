@@ -15,7 +15,7 @@ const orderTextBean = document.getElementById("order-text-bean");
 const orderTextWeight = document.getElementById("order-text-weight");
 const orderTextGrind = document.getElementById("order-text-grind");
 const orderTextDelivery = document.getElementById("order-text-delivery");
-
+const groundAla = document.getElementById("ground-ala");
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -80,13 +80,18 @@ function showOptions(index) {
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
-      orderTextCoffee.innerHTML = `${preference.value}`
+      orderTextCoffee.innerHTML = `${preference.value}`;
       asOrUsing.innerHTML = "using";
       grindOption.style.display = "none";
-    } else if (preference.value === "Filter" || preference.value === "Espresso" ){
-      orderTextCoffee.innerHTML  = `${preference.value}`
+      groundAla.style.display = "none";
+    } else if (
+      preference.value === "Filter" ||
+      preference.value === "Espresso"
+    ) {
+      orderTextCoffee.innerHTML = `${preference.value}`;
       asOrUsing.innerHTML = "as";
       grindOption.style.display = "block";
+      groundAla.style.display = "inline-block";
     }
     showOptions(1);
     if (!greenArrowsArray[1].classList.contains("rotate")) {
@@ -96,7 +101,7 @@ preferences.forEach((preference) => {
 });
 beanType.forEach((bean) => {
   bean.addEventListener("click", function () {
-    orderTextBean.innerHTML = `${bean.value}`
+    orderTextBean.innerHTML = `${bean.value}`;
     showOptions(2);
     if (!greenArrowsArray[2].classList.contains("rotate")) {
       greenArrowsArray[2].classList.add("rotate");
@@ -114,13 +119,13 @@ quantity.forEach((quantity) => {
 });
 grindOptions.forEach((grind) => {
   grind.addEventListener("click", function () {
+    orderTextGrind.innerHTML = `${grind.value}`;
     showOptions(4);
     if (!greenArrowsArray[4].classList.contains("rotate")) {
       greenArrowsArray[4].classList.add("rotate");
     }
   });
 });
-
 
 deliveries.forEach((delivery) => {
   delivery.addEventListener("click", function () {
