@@ -47,6 +47,8 @@ greenArrows.forEach((arrow, index) => {
   });
 });
 
+const greenArrowsArray = Array.from(greenArrows);
+
 // Function to toggle options visibility
 
   function toggleOptions(index) {
@@ -71,21 +73,25 @@ greenArrows.forEach((arrow, index) => {
   preferences.forEach(preference => {
     preference.addEventListener("click", function() {
       showOptions(1)
+      greenArrowsArray[1].classList.add("rotate");
     })
   })
   beanType.forEach(bean => {
     bean.addEventListener("click", function() {
       showOptions(2)
+      greenArrowsArray[2].classList.add("rotate");
     })
   })
   quantity.forEach(quantity => {
     quantity.addEventListener("click", function() {
       showOptions(3)
+      greenArrowsArray[3].classList.add("rotate");
     })
   })
   grindOption.forEach(grind => {
     grind.addEventListener("click", function() {
       showOptions(4)
+      greenArrowsArray[4].classList.add("rotate");
     })
   })
 
