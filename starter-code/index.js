@@ -9,8 +9,13 @@ const quantity = document.getElementsByName("quantity");
 const grindOptions = document.getElementsByName("grind-option");
 const grindOption = document.getElementById("grind-option");
 const deliveries = document.getElementsByName("deliveries");
-const coffeeType = document.getElementById("coffee-type");
 const asOrUsing = document.getElementById("as-or-using");
+const orderTextCoffee = document.getElementById("order-text-coffee");
+const orderTextBean = document.getElementById("order-text-bean");
+const orderTextWeight = document.getElementById("order-text-weight");
+const orderTextGrind = document.getElementById("order-text-grind");
+const orderTextDelivery = document.getElementById("order-text-delivery");
+
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -75,11 +80,11 @@ function showOptions(index) {
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
-      coffeeType.innerHTML = `${preference.value}`
+      orderTextCoffee.innerHTML = `${preference.value}`
       asOrUsing.innerHTML = "using";
       grindOption.style.display = "none";
     } else if (preference.value === "Filter" || preference.value === "Espresso" ){
-      coffeeType.innerHTML  = `${preference.value}`
+      orderTextCoffee.innerHTML  = `${preference.value}`
       asOrUsing.innerHTML = "as";
       grindOption.style.display = "block";
     }
@@ -91,6 +96,7 @@ preferences.forEach((preference) => {
 });
 beanType.forEach((bean) => {
   bean.addEventListener("click", function () {
+    orderTextBean.innerHTML = `${bean.value}`
     showOptions(2);
     if (!greenArrowsArray[2].classList.contains("rotate")) {
       greenArrowsArray[2].classList.add("rotate");
