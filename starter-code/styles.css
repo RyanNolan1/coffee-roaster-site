@@ -650,6 +650,10 @@ label:has([type="radio"]:checked) p {
   font-family: "Fraunces", serif;
 }
 
+#coffee-type {
+  color:#0E8784;
+}
+
 
 @media (min-width: 768px) {
   body {

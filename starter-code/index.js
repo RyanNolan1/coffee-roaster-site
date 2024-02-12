@@ -9,6 +9,7 @@ const quantity = document.getElementsByName("quantity");
 const grindOption = document.getElementsByName("grind-option");
 const deliveries = document.getElementsByName("deliveries");
 const coffeeType = document.getElementById("coffee-type");
+const asOrUsing = document.getElementById("as-or-using");
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -73,9 +74,11 @@ function showOptions(index) {
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
-      coffeeType.innerHTML = `using ${preference.value}`
+      coffeeType.innerHTML = `${preference.value}`
+      asOrUsing.innerHTML = "using"
     } else if (preference.value === "Filter" || preference.value === "Espresso" ){
-      coffeeType.innerHTML  = `as ${preference.value}`
+      coffeeType.innerHTML  = `${preference.value}`
+      asOrUsing.innerHTML = "as"
     }
     showOptions(1);
     if (!greenArrowsArray[1].classList.contains("rotate")) {
