@@ -105,6 +105,7 @@ beanType.forEach((bean) => {
 });
 quantity.forEach((quantity) => {
   quantity.addEventListener("click", function () {
+    orderTextWeight.innerHTML = `${quantity.value}`
     showOptions(3);
     if (!greenArrowsArray[3].classList.contains("rotate")) {
       greenArrowsArray[3].classList.add("rotate");
