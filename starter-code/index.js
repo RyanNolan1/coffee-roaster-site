@@ -57,24 +57,37 @@ greenArrows.forEach((arrow, index) => {
     options[index].classList.toggle("expand");
   }
 
+  // Function to add options visibility
+
+  function showOptions(index) {
+    const option = options[index].querySelectorAll(".option");
+    option.forEach((element) => {
+      element.classList.add("expand")
+    });
+    options[index].classList.add("expand");
+  }
+
 
   preferences.forEach(preference => {
     preference.addEventListener("click", function() {
-      toggleOptions(1)
+      showOptions(1)
     })
   })
   beanType.forEach(bean => {
     bean.addEventListener("click", function() {
-      toggleOptions(2)
+      showOptions(2)
     })
   })
   quantity.forEach(quantity => {
     quantity.addEventListener("click", function() {
-      toggleOptions(3)
+      showOptions(3)
     })
   })
   grindOption.forEach(grind => {
     grind.addEventListener("click", function() {
-      toggleOptions(4)
+      showOptions(4)
     })
   })
+
+
+
