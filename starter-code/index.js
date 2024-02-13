@@ -124,11 +124,12 @@ quantity.forEach((quantity) => {
     if (grindOption.style.display === "none") {
       showOptions(4);
       increaseOpacity(4);
+      rotateArrow(4);
     } else {
       showOptions(3);
       increaseOpacity(3);
+      rotateArrow(3);
     }
-    rotateArrow(3);
   });
 });
 grindOptions.forEach((grind) => {
