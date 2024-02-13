@@ -706,16 +706,21 @@ label:has([type="radio"]:checked) p {
   background: #000a0a8f;
   padding: 2rem;
   width:100vw;
+  /* display:none; */
 }
 
 .subscribe-container {
-  background-color: white;
+  background-color: #FEFCF7;
   height: 100vh;
   border-radius: 10px;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   display:flex;
+  overflow: hidden;
+  max-width:33.75rem;
+  max-height:37.3125rem;
+  font-size:0.9375rem;
 }
 
 .subscribe-header {
@@ -729,25 +734,32 @@ label:has([type="radio"]:checked) p {
 }
 
 .subscribe-details {
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  gap:1rem;
+}
+
+.subscribe-message  {
+text-align: left;
 }
 
 #subscribe-button {
   border: none;
   background: rgb(14, 135, 132);
   font-size: 1.2rem;
-  color: #fefcf7;
+  color: #FEFCF7;
   font-family: "Fraunces", serif;
-  padding: 1rem 2rem 1rem;
+  padding: 1rem;
   transition: 0.3s;
   border-radius: 10px;
-  max-width: fit-content;
+  width: 100%;
+  text-align: center;
   align-self: center;
+  font-size:1.125rem;
 }
 
 #subscribe-button:hover {
