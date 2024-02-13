@@ -166,6 +166,13 @@ function mobileMedia(screenSize) {
     greenArrows.forEach((arrow) => {
       arrow.classList.add("rotate");
     });
+  } else {
+    options.forEach((element) => {
+      element.classList.remove("expand");
+    });
+    greenArrows.forEach((arrow) => {
+      arrow.classList.remove("rotate");
+    });
   }
 }
 
