@@ -321,7 +321,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   background: #fefcf7;
 }
@@ -665,6 +665,16 @@ label:has([type="radio"]:checked) p {
   display: none;
 }
 
+
+#preferences,
+#bean-type,
+#quantity,
+#deliveries,
+#grind-option {
+  padding-top: 82.563px;
+  margin-top: -82.563px;
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 15px;
@@ -804,7 +814,6 @@ label:has([type="radio"]:checked) p {
 
   .header-nav-section {
     padding: 2.5rem 2.5rem;
-    z-index: 3;
   }
 
   .header-nav {
@@ -1196,15 +1205,6 @@ label:has([type="radio"]:checked) p {
   .question h3 {
     text-align: left;
     text-wrap: nowrap;
-  }
-
-  #preferences,
-  #bean-type,
-  #quantity,
-  #deliveries,
-  #grind-option {
-    padding-top: 106.875px;
-    margin-top: -106.875px;
   }
 
   .question-container {
