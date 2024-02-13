@@ -79,11 +79,14 @@ function showOptions(index) {
   options[index].classList.add("expand");
 }
 
+// Function to rotate the green arrows
+
 function rotateArrow(index) {
   if (!greenArrowsArray[index].classList.contains("rotate")) {
     greenArrowsArray[index].classList.add("rotate");
   }
 }
+
 
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
@@ -150,4 +153,26 @@ deliveries.forEach((delivery) => {
   delivery.addEventListener("click", function () {
     orderTextDelivery.innerHTML = `${delivery.value}`;
   });
+});
+
+
+// Media query Function to make the classlist "rotate" and "expand" be automatically applied on mobile
+
+function mobileMedia(screenSize) {
+  if (screenSize.matches) {
+    options.forEach((element) => {
+      element.classList.add("expand");
+    });
+    greenArrows.forEach((arrow) => {
+      arrow.classList.add("rotate");
+    });
+  }
+}
+
+var screenSize = window.matchMedia("(max-width: 768px)");
+
+mobileMedia(screenSize);
+
+screenSize.addEventListener("change", function () {
+  mobileMedia(screenSize);
 });
