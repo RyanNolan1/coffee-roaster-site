@@ -38,6 +38,7 @@ function toggleMenu() {
 questions.forEach((question, index) => {
   question.addEventListener("click", function() {
     increaseOpacity(index);
+    toggleOptions(index);
   });
 });
 
