@@ -17,6 +17,8 @@ const orderTextGrind = document.getElementById("order-text-grind");
 const orderTextDelivery = document.getElementById("order-text-delivery");
 const groundAla = document.getElementById("ground-ala");
 const deliveryNumber = document.getElementById("delivery-number");
+const greenArrowsArray = Array.from(greenArrows);
+const questionsArray = Array.from(questions);
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -33,19 +35,21 @@ function toggleMenu() {
 
 // Function to highlight the plan navigation
 
-questions.forEach((question) => {
-  question.addEventListener("click", increaseOpacity);
-
-  function increaseOpacity() {
-    questions.forEach((question) => {
-      question.style.opacity = "40%";
-      question.querySelector(".question-number").style.color =
-        "rgb(51, 61, 75)";
-    });
-    question.style.opacity = "100%";
-    question.querySelector(".question-number").style.color = "#0E8784";
-  }
+questions.forEach((question, index) => {
+  question.addEventListener("click", function() {
+    increaseOpacity(index);
+  });
 });
+
+  function increaseOpacity(questionIndex) {
+    // questions.forEach((question) => {
+    //   question.style.opacity = "40%";
+    //   question.querySelector(".question-number").style.color =
+    //     "rgb(51, 61, 75)";
+    // });
+    questionsArray[questionIndex].style.opacity = "100%";
+    questionsArray[questionIndex].querySelector(".question-number").style.color = "#0E8784";
+  }
 
 // Function to rotate the green arrows and toggle on click
 
@@ -53,11 +57,9 @@ greenArrows.forEach((arrow, index) => {
   arrow.addEventListener("click", function () {
     arrow.classList.toggle("rotate");
     toggleOptions(index);
+    increaseOpacity(index);
   });
 });
-
-const greenArrowsArray = Array.from(greenArrows);
-const questionsArray = Array.from(questions);
 
 // Function to toggle options visibility
 
@@ -107,6 +109,7 @@ preferences.forEach((preference) => {
     }
     showOptions(1);
     rotateArrow(1);
+    increaseOpacity(1);
   });
 });
 beanType.forEach((bean) => {
@@ -114,6 +117,7 @@ beanType.forEach((bean) => {
     orderTextBean.innerHTML = `${bean.value}`;
     showOptions(2);
     rotateArrow(2);
+    increaseOpacity(2);
   });
 });
 quantity.forEach((quantity) => {
@@ -121,8 +125,10 @@ quantity.forEach((quantity) => {
     orderTextWeight.innerHTML = `${quantity.value}`;
     if (grindOption.style.display === "none") {
       showOptions(4);
+      increaseOpacity(4);
     } else {
       showOptions(3);
+      increaseOpacity(3);
     }
     rotateArrow(3);
   });
@@ -132,6 +138,7 @@ grindOptions.forEach((grind) => {
     orderTextGrind.innerHTML = `${grind.value}`;
     showOptions(4);
     rotateArrow(4);
+    increaseOpacity(4);
   });
 });
 
