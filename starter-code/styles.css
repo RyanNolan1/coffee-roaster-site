@@ -1208,7 +1208,7 @@ label:has([type="radio"]:checked) p {
   }
 
   .question-container {
-    gap: 2rem;
+    gap: 4rem;
   }
 
   h6 {
