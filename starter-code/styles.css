@@ -640,7 +640,7 @@ label:has([type="radio"]:checked) p {
   align-items: start;
   border-radius: 10px;
   gap: 1rem;
-  margin-top:4rem
+  margin-top: 4rem;
 }
 
 .order-header {
@@ -696,21 +696,60 @@ label:has([type="radio"]:checked) p {
 }
 
 .subscribe-section {
-  height:100vh;
-  position:fixed;
-  z-index:10;
-  display:flex;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   background: #000a0a8f;
-  padding:2rem;
+  padding: 2rem;
 }
 
 .subscribe-container {
   background-color: white;
-  height:100vh;
-  border-radius:10px;
+  height: 100vh;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-header {
+  padding: 2rem;
+  background: #333d4b;
+}
+
+.subscribe-header h2 {
+  color: white;
+  text-align: left;
+}
+
+.subscribe-details {
+  padding: 4rem 2rem 2rem 2rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:calc(100% - 92px);
+}
+
+#subscribe-button {
+  border: none;
+  background: rgb(14, 135, 132);
+  font-size: 1.2rem;
+  color: #fefcf7;
+  font-family: "Fraunces", serif;
+  padding: 1rem 2rem 1rem;
+  transition: 0.3s;
+  border-radius: 10px;
+  max-width: fit-content;
+  align-self: center;
+}
+
+#subscribe-button:hover {
+  background: #66d2cf;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -1231,7 +1270,7 @@ label:has([type="radio"]:checked) p {
     height: fit-content;
     top: 140px;
     position: sticky;
-    padding-bottom:8rem;
+    padding-bottom: 8rem;
   }
 
   .questions-nav a {
@@ -1279,7 +1318,7 @@ label:has([type="radio"]:checked) p {
 }
 
 #submit-button {
-  align-self:end;
+  align-self: end;
 }
 
 @media (min-width: 1440px) {
