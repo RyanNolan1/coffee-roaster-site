@@ -704,7 +704,7 @@ label:has([type="radio"]:checked) p {
   justify-content: center;
   align-items: center;
   background: #000a0a8f;
-  padding: 2rem;
+  padding: 1.5rem;
   width:100vw;
   /* display:none; */
 }
