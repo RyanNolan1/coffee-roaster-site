@@ -377,6 +377,7 @@ footer {
 .nav-active {
   opacity: 1;
   visibility: visible;
+  z-index:3;
 }
 
 .coffee-info {
