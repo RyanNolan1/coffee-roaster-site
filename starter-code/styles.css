@@ -377,7 +377,7 @@ footer {
 .nav-active {
   opacity: 1;
   visibility: visible;
-  z-index:3;
+  z-index: 3;
 }
 
 .coffee-info {
@@ -665,7 +665,6 @@ label:has([type="radio"]:checked) p {
 #ground-ala {
   display: none;
 }
-
 
 #preferences,
 #bean-type,
@@ -965,7 +964,16 @@ label:has([type="radio"]:checked) p {
   }
 
   .order-summary-section {
-    padding:2rem 4rem;
+    padding: 2rem 4rem;
+  }
+
+  #preferences,
+  #bean-type,
+  #quantity,
+  #deliveries,
+  #grind-option {
+    padding-top: 106.875px;
+    margin-top: -106.875px;
   }
 }
 
