@@ -1149,7 +1149,7 @@ display:none;
     flex-direction: column;
     gap: 2rem;
     height: fit-content;
-    position: sticky;
+    /* position: sticky; */
     top: 140px;
   }
 
