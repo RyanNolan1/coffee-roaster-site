@@ -551,6 +551,11 @@ footer {
   max-width: 15rem;
 }
 
+.question-and-arrow h6 {
+  max-width:15rem;
+  line-height:2rem;
+}
+
 .options {
   display: flex;
   flex-direction: column;
