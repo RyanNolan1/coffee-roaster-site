@@ -16,6 +16,7 @@ const orderTextWeight = document.getElementById("order-text-weight");
 const orderTextGrind = document.getElementById("order-text-grind");
 const orderTextDelivery = document.getElementById("order-text-delivery");
 const groundAla = document.getElementById("ground-ala");
+const deliveryNumber = document.getElementById("delivery-number");
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -56,6 +57,7 @@ greenArrows.forEach((arrow, index) => {
 });
 
 const greenArrowsArray = Array.from(greenArrows);
+const questionsArray = Array.from(questions);
 
 // Function to toggle options visibility
 
@@ -90,6 +92,8 @@ preferences.forEach((preference) => {
       asOrUsing.innerHTML = "using";
       grindOption.style.display = "none";
       groundAla.style.display = "none";
+      questionsArray[3].style.display = "none"
+      deliveryNumber.innerHTML = "04";
     } else if (
       preference.value === "Filter" ||
       preference.value === "Espresso"
@@ -98,6 +102,8 @@ preferences.forEach((preference) => {
       asOrUsing.innerHTML = "as";
       grindOption.style.display = "block";
       groundAla.style.display = "inline-block";
+      questionsArray[3].style.display = "flex"
+      deliveryNumber.innerHTML = "05";
     }
     showOptions(1);
     rotateArrow(1);
