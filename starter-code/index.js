@@ -108,6 +108,7 @@ preferences.forEach((preference) => {
     showOptions(1);
     rotateArrow(1);
     increaseOpacity(1);
+    window.location.href = "#bean-type";
   });
 });
 beanType.forEach((bean) => {
@@ -116,6 +117,7 @@ beanType.forEach((bean) => {
     showOptions(2);
     rotateArrow(2);
     increaseOpacity(2);
+    window.location.href = "#quantity";
   });
 });
 quantity.forEach((quantity) => {
@@ -125,10 +127,12 @@ quantity.forEach((quantity) => {
       showOptions(4);
       increaseOpacity(4);
       rotateArrow(4);
+      window.location.href = "#deliveries";
     } else {
       showOptions(3);
       increaseOpacity(3);
       rotateArrow(3);
+      window.location.href = "#grind-option";
     }
   });
 });
@@ -138,6 +142,7 @@ grindOptions.forEach((grind) => {
     showOptions(4);
     rotateArrow(4);
     increaseOpacity(4);
+    window.location.href = "#deliveries";
   });
 });
 
