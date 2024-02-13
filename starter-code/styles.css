@@ -561,9 +561,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  height: 100%;
-  opacity: 1;
-  visibility: visible;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
   transition: height 1s ease, opacity 1s ease;
 }
 
@@ -574,9 +574,9 @@ footer {
   border-radius: 10px;
   width: 100%;
   z-index: 2;
-  height: 100%;
-  opacity: 1;
-  visibility: visible;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
   transition: height 1s ease, opacity 1s ease;
 }
 

@@ -155,32 +155,3 @@ deliveries.forEach((delivery) => {
     window.location.href = "#order-summary-link";
   });
 });
-
-
-// Media query Function to make the classlist "rotate" and "expand" be automatically applied on mobile
-
-function mobileMedia(screenSize) {
-  if (screenSize.matches) {
-    options.forEach((element) => {
-      element.classList.add("expand");
-    });
-    greenArrows.forEach((arrow) => {
-      arrow.classList.add("rotate");
-    });
-  } else {
-    options.forEach((element) => {
-      element.classList.remove("expand");
-    });
-    greenArrows.forEach((arrow) => {
-      arrow.classList.remove("rotate");
-    });
-  }
-}
-
-var screenSize = window.matchMedia("(max-width: 768px)");
-
-mobileMedia(screenSize);
-
-screenSize.addEventListener("change", function () {
-  mobileMedia(screenSize);
-});
