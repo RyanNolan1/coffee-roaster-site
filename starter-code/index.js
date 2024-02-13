@@ -36,23 +36,18 @@ function toggleMenu() {
 // Function to highlight the plan navigation
 
 questions.forEach((question, index) => {
-  question.addEventListener("click", function() {
+  question.addEventListener("click", function () {
     increaseOpacity(index);
     toggleOptions(index);
+    rotateArrow(index);
   });
 });
 
-  function increaseOpacity(questionIndex) {
-    // questions.forEach((question) => {
-    //   question.style.opacity = "40%";
-    //   question.querySelector(".question-number").style.color =
-    //     "rgb(51, 61, 75)";
-    // });
-    questionsArray[questionIndex].style.opacity = "100%";
-    questionsArray[questionIndex].querySelector(".question-number").style.color = "#0E8784";
-    toggleOptions(questionIndex);
-    rotateArrow(questionIndex)
-  }
+function increaseOpacity(questionIndex) {
+  questionsArray[questionIndex].style.opacity = "100%";
+  questionsArray[questionIndex].querySelector(".question-number").style.color =
+    "#0E8784";
+}
 
 // Function to rotate the green arrows and toggle on click
 
@@ -85,9 +80,9 @@ function showOptions(index) {
 }
 
 function rotateArrow(index) {
-    if (!greenArrowsArray[index].classList.contains("rotate")) {
-      greenArrowsArray[index].classList.add("rotate");
-    }
+  if (!greenArrowsArray[index].classList.contains("rotate")) {
+    greenArrowsArray[index].classList.add("rotate");
+  }
 }
 
 preferences.forEach((preference) => {
@@ -97,7 +92,7 @@ preferences.forEach((preference) => {
       asOrUsing.innerHTML = "using";
       grindOption.style.display = "none";
       groundAla.style.display = "none";
-      questionsArray[3].style.display = "none"
+      questionsArray[3].style.display = "none";
       deliveryNumber.innerHTML = "04";
     } else if (
       preference.value === "Filter" ||
@@ -107,7 +102,7 @@ preferences.forEach((preference) => {
       asOrUsing.innerHTML = "as";
       grindOption.style.display = "block";
       groundAla.style.display = "inline-block";
-      questionsArray[3].style.display = "flex"
+      questionsArray[3].style.display = "flex";
       deliveryNumber.innerHTML = "05";
     }
     showOptions(1);
