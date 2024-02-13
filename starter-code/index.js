@@ -16,6 +16,9 @@ const orderTextWeight = document.getElementById("order-text-weight");
 const orderTextGrind = document.getElementById("order-text-grind");
 const orderTextDelivery = document.getElementById("order-text-delivery");
 const groundAla = document.getElementById("ground-ala");
+const deliveryNumber = document.getElementById("delivery-number");
+const greenArrowsArray = Array.from(greenArrows);
+const questionsArray = Array.from(questions);
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -32,39 +35,38 @@ function toggleMenu() {
 
 // Function to highlight the plan navigation
 
-questions.forEach((question) => {
-  question.addEventListener("click", increaseOpacity);
-
-  function increaseOpacity() {
-    questions.forEach((question) => {
-      question.style.opacity = "40%";
-      question.querySelector(".question-number").style.color =
-        "rgb(51, 61, 75)";
-    });
-    question.style.opacity = "100%";
-    question.querySelector(".question-number").style.color = "#0E8784";
-  }
+questions.forEach((question, index) => {
+  question.addEventListener("click", function () {
+    increaseOpacity(index);
+    toggleOptions(index);
+    rotateArrow(index);
+  });
 });
+
+function increaseOpacity(questionIndex) {
+  questionsArray[questionIndex].style.opacity = "100%";
+  questionsArray[questionIndex].querySelector(".question-number").style.color =
+    "#0E8784";
+}
 
 // Function to rotate the green arrows and toggle on click
 
 greenArrows.forEach((arrow, index) => {
   arrow.addEventListener("click", function () {
-    arrow.classList.toggle("rotate");
+    arrow.classList.add("rotate");
     toggleOptions(index);
+    increaseOpacity(index);
   });
 });
-
-const greenArrowsArray = Array.from(greenArrows);
 
 // Function to toggle options visibility
 
 function toggleOptions(index) {
   const option = options[index].querySelectorAll(".option");
   option.forEach((element) => {
-    element.classList.toggle("expand");
+    element.classList.add("expand");
   });
-  options[index].classList.toggle("expand");
+  options[index].classList.add("expand");
 }
 
 // Function to add options visibility
@@ -77,6 +79,15 @@ function showOptions(index) {
   options[index].classList.add("expand");
 }
 
+// Function to rotate the green arrows
+
+function rotateArrow(index) {
+  if (!greenArrowsArray[index].classList.contains("rotate")) {
+    greenArrowsArray[index].classList.add("rotate");
+  }
+}
+
+
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
@@ -84,6 +95,8 @@ preferences.forEach((preference) => {
       asOrUsing.innerHTML = "using";
       grindOption.style.display = "none";
       groundAla.style.display = "none";
+      questionsArray[3].style.display = "none";
+      deliveryNumber.innerHTML = "04";
     } else if (
       preference.value === "Filter" ||
       preference.value === "Espresso"
@@ -92,20 +105,22 @@ preferences.forEach((preference) => {
       asOrUsing.innerHTML = "as";
       grindOption.style.display = "block";
       groundAla.style.display = "inline-block";
+      questionsArray[3].style.display = "flex";
+      deliveryNumber.innerHTML = "05";
     }
     showOptions(1);
-    if (!greenArrowsArray[1].classList.contains("rotate")) {
-      greenArrowsArray[1].classList.add("rotate");
-    }
+    rotateArrow(1);
+    increaseOpacity(1);
+    window.location.href = "#bean-type";
   });
 });
 beanType.forEach((bean) => {
   bean.addEventListener("click", function () {
     orderTextBean.innerHTML = `${bean.value}`;
     showOptions(2);
-    if (!greenArrowsArray[2].classList.contains("rotate")) {
-      greenArrowsArray[2].classList.add("rotate");
-    }
+    rotateArrow(2);
+    increaseOpacity(2);
+    window.location.href = "#quantity";
   });
 });
 quantity.forEach((quantity) => {
@@ -113,11 +128,14 @@ quantity.forEach((quantity) => {
     orderTextWeight.innerHTML = `${quantity.value}`;
     if (grindOption.style.display === "none") {
       showOptions(4);
+      increaseOpacity(4);
+      rotateArrow(4);
+      window.location.href = "#deliveries";
     } else {
       showOptions(3);
-    }
-    if (!greenArrowsArray[3].classList.contains("rotate")) {
-      greenArrowsArray[3].classList.add("rotate");
+      increaseOpacity(3);
+      rotateArrow(3);
+      window.location.href = "#grind-option";
     }
   });
 });
@@ -125,14 +143,15 @@ grindOptions.forEach((grind) => {
   grind.addEventListener("click", function () {
     orderTextGrind.innerHTML = `${grind.value}`;
     showOptions(4);
-    if (!greenArrowsArray[4].classList.contains("rotate")) {
-      greenArrowsArray[4].classList.add("rotate");
-    }
+    rotateArrow(4);
+    increaseOpacity(4);
+    window.location.href = "#deliveries";
   });
 });
 
 deliveries.forEach((delivery) => {
   delivery.addEventListener("click", function () {
     orderTextDelivery.innerHTML = `${delivery.value}`;
+    window.location.href = "#order-summary-link";
   });
 });
