@@ -552,8 +552,8 @@ footer {
 }
 
 .question-and-arrow h6 {
-  max-width:15rem;
-  line-height:2rem;
+  max-width: 15rem;
+  line-height: 2rem;
 }
 
 .options {
@@ -682,6 +682,10 @@ label:has([type="radio"]:checked) p {
   h3 {
     font-size: 1.75rem;
     line-height: 1.75rem;
+  }
+
+  h6 {
+    font-size: 2rem;
   }
 
   header {
@@ -944,6 +948,10 @@ label:has([type="radio"]:checked) p {
     height: auto;
     opacity: 1;
     visibility: visible;
+  }
+
+  .question-and-arrow h6 {
+    max-width: 100%;
   }
 }
 
