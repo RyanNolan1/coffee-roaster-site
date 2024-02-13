@@ -56,7 +56,7 @@ questions.forEach((question, index) => {
 
 greenArrows.forEach((arrow, index) => {
   arrow.addEventListener("click", function () {
-    arrow.classList.toggle("rotate");
+    arrow.classList.add("rotate");
     toggleOptions(index);
     increaseOpacity(index);
   });
@@ -67,9 +67,9 @@ greenArrows.forEach((arrow, index) => {
 function toggleOptions(index) {
   const option = options[index].querySelectorAll(".option");
   option.forEach((element) => {
-    element.classList.toggle("expand");
+    element.classList.add("expand");
   });
-  options[index].classList.toggle("expand");
+  options[index].classList.add("expand");
 }
 
 // Function to add options visibility
