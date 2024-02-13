@@ -1213,6 +1213,7 @@ label:has([type="radio"]:checked) p {
     height: fit-content;
     top: 140px;
     position: sticky;
+    padding-bottom:8rem;
   }
 
   .questions-nav a {
