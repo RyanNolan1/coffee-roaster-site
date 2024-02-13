@@ -634,7 +634,7 @@ label:has([type="radio"]:checked) p {
 
 .order-summary-section {
   background: #2c343e;
-  padding: 2rem 4rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -962,6 +962,10 @@ label:has([type="radio"]:checked) p {
 
   .question-and-arrow h6 {
     max-width: 100%;
+  }
+
+  .order-summary-section {
+    padding:2rem 4rem;
   }
 }
 
