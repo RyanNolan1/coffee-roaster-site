@@ -705,6 +705,7 @@ label:has([type="radio"]:checked) p {
   align-items: center;
   background: #000a0a8f;
   padding: 2rem;
+  width:100vw;
 }
 
 .subscribe-container {
