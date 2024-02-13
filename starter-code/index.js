@@ -51,6 +51,7 @@ questions.forEach((question, index) => {
     questionsArray[questionIndex].style.opacity = "100%";
     questionsArray[questionIndex].querySelector(".question-number").style.color = "#0E8784";
     toggleOptions(questionIndex);
+    rotateArrow(questionIndex)
   }
 
 // Function to rotate the green arrows and toggle on click
