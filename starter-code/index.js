@@ -17,6 +17,7 @@ const orderTextGrind = document.getElementById("order-text-grind");
 const orderTextDelivery = document.getElementById("order-text-delivery");
 const groundAla = document.getElementById("ground-ala");
 const deliveryNumber = document.getElementById("delivery-number");
+const submitButton = document.getElementById("submit-button");
 const greenArrowsArray = Array.from(greenArrows);
 const questionsArray = Array.from(questions);
 
@@ -155,3 +156,10 @@ deliveries.forEach((delivery) => {
     window.location.href = "#order-summary-link";
   });
 });
+
+
+submitButton.addEventListener("click", displaySummary)
+
+function displaySummary() {
+console.log(`"I drink my coffee ${asOrUsing.innerText} ${orderTextCoffee.innerText}, with a ${orderTextBean.innerText} type of bean. ${orderTextWeight.innerText} ${groundAla.innerText} ${orderTextGrind.innerText}, sent to me ${orderTextDelivery.innerText}."`)
+}

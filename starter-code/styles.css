@@ -706,7 +706,7 @@ label:has([type="radio"]:checked) p {
   background: #000a0a8f;
   padding: 1.5rem;
   width:100vw;
-  /* display:none; */
+  display:none;
 }
 
 .subscribe-container {
