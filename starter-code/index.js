@@ -152,6 +152,7 @@ grindOptions.forEach((grind) => {
 deliveries.forEach((delivery) => {
   delivery.addEventListener("click", function () {
     orderTextDelivery.innerHTML = `${delivery.value}`;
+    window.location.href = "#order-summary-link";
   });
 });
 
