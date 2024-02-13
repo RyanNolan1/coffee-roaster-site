@@ -671,7 +671,8 @@ label:has([type="radio"]:checked) p {
 #bean-type,
 #quantity,
 #deliveries,
-#grind-option {
+#grind-option,
+#order-summary-link {
   padding-top: 82.563px;
   margin-top: -82.563px;
 }
@@ -990,7 +991,8 @@ label:has([type="radio"]:checked) p {
   #bean-type,
   #quantity,
   #deliveries,
-  #grind-option {
+  #grind-option,
+  #order-summary-link {
     padding-top: 106.875px;
     margin-top: -106.875px;
   }
