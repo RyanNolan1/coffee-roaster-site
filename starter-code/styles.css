@@ -560,9 +560,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
   transition: height 1s ease, opacity 1s ease;
 }
 
@@ -573,9 +573,9 @@ footer {
   border-radius: 10px;
   width: 100%;
   z-index: 2;
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
   transition: height 1s ease, opacity 1s ease;
 }
 
@@ -916,10 +916,16 @@ label:has([type="radio"]:checked) p {
   .options {
     flex-direction: row;
     gap: 0.625rem;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .option {
     padding: 2rem 2rem 4rem 2rem;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .option p {
