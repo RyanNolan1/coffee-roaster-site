@@ -77,6 +77,12 @@ function showOptions(index) {
   options[index].classList.add("expand");
 }
 
+function rotateArrow(index) {
+    if (!greenArrowsArray[index].classList.contains("rotate")) {
+      greenArrowsArray[index].classList.add("rotate");
+    }
+}
+
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
@@ -94,18 +100,14 @@ preferences.forEach((preference) => {
       groundAla.style.display = "inline-block";
     }
     showOptions(1);
-    if (!greenArrowsArray[1].classList.contains("rotate")) {
-      greenArrowsArray[1].classList.add("rotate");
-    }
+    rotateArrow(1);
   });
 });
 beanType.forEach((bean) => {
   bean.addEventListener("click", function () {
     orderTextBean.innerHTML = `${bean.value}`;
     showOptions(2);
-    if (!greenArrowsArray[2].classList.contains("rotate")) {
-      greenArrowsArray[2].classList.add("rotate");
-    }
+    rotateArrow(2);
   });
 });
 quantity.forEach((quantity) => {
@@ -116,18 +118,14 @@ quantity.forEach((quantity) => {
     } else {
       showOptions(3);
     }
-    if (!greenArrowsArray[3].classList.contains("rotate")) {
-      greenArrowsArray[3].classList.add("rotate");
-    }
+    rotateArrow(3);
   });
 });
 grindOptions.forEach((grind) => {
   grind.addEventListener("click", function () {
     orderTextGrind.innerHTML = `${grind.value}`;
     showOptions(4);
-    if (!greenArrowsArray[4].classList.contains("rotate")) {
-      greenArrowsArray[4].classList.add("rotate");
-    }
+    rotateArrow(4);
   });
 });
 
