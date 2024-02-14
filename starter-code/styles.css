@@ -711,7 +711,6 @@ label:has([type="radio"]:checked) p {
 }
 
 .subscribe-container {
-  background-color: #fefcf7;
   border-radius: 10px;
   flex-direction: column;
   display: flex;
@@ -737,6 +736,7 @@ label:has([type="radio"]:checked) p {
   flex-direction: column;
   flex-grow: 1;
   gap: 1rem;
+    background-color: #fefcf7;
 }
 
 .subscribe-message {
