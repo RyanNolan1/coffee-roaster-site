@@ -29,6 +29,8 @@ Users should be able to:
 ### Screenshot
 
 ![](./homepage.png)
+![](./about.html)
+![](./create-your-plan-page.png)
 
 ### Links
 
