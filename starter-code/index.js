@@ -28,6 +28,9 @@ const subscribeTextGrind = document.getElementById("subscribe-text-grind");
 const subscribeTextDelivery = document.getElementById(
   "subscribe-text-delivery"
 );
+const everyWeekPrice = document.getElementById("every-week-price");
+const everyTwoWeekPrice = document.getElementById("every-two-week-price");
+const everyMonthPrice = document.getElementById("every-month-price");
 const greenArrowsArray = Array.from(greenArrows);
 const questionsArray = Array.from(questions);
 
@@ -147,6 +150,7 @@ quantity.forEach((quantity) => {
       rotateArrow(3);
       window.location.href = "#grind-option";
     }
+    shippingCost(quantity.value)
   });
 });
 grindOptions.forEach((grind) => {
@@ -178,4 +182,20 @@ function displaySummary() {
   subscribeGroundAla.innerText = groundAla.innerText;
   subscribeTextGrind.innerText = orderTextGrind.innerText;
   subscribeTextDelivery.innerText = orderTextDelivery.innerText;
+}
+
+function shippingCost(weight) {
+  if (weight === "250g") {
+    everyWeekPrice.innerText = "$7.20";
+    everyTwoWeekPrice.innerText = "$9.60";
+    everyMonthPrice.innerText = "$12.00";
+  } else if (weight === "500g") {
+    everyWeekPrice.innerText = "$13.00";
+    everyTwoWeekPrice.innerText = "$17.50";
+    everyMonthPrice.innerText = "$22.00";
+  } else if (weight === "1000g") {
+    everyWeekPrice.innerText = "$22.00";
+    everyTwoWeekPrice.innerText = "$32.00";
+    everyMonthPrice.innerText = "$42.00";
+  }
 }
