@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/RyanNolan1/coffee-roaster-site/tree/main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/RyanNolan1/coffee-roaster-site/tree/main](https://github.com/RyanNolan1/coffee-roaster-site/tree/main)
+- Live Site URL: [https://ryannolan1.github.io/coffee-roaster-site/index.html](https://ryannolan1.github.io/coffee-roaster-site/index.html)
 
 ## My process
 
