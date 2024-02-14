@@ -101,22 +101,22 @@ function rotateArrow(index) {
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
-      orderTextCoffee.innerHTML = `${preference.value}`;
-      asOrUsing.innerHTML = "using";
+      orderTextCoffee.innerText = `${preference.value}`;
+      asOrUsing.innerText = "using";
       grindOption.style.display = "none";
       groundAla.style.display = "none";
       questionsArray[3].style.display = "none";
-      deliveryNumber.innerHTML = "04";
+      deliveryNumber.innerText = "04";
     } else if (
       preference.value === "Filter" ||
       preference.value === "Espresso"
     ) {
-      orderTextCoffee.innerHTML = `${preference.value}`;
-      asOrUsing.innerHTML = "as";
+      orderTextCoffee.innerText = `${preference.value}`;
+      asOrUsing.innerText = "as";
       grindOption.style.display = "block";
       groundAla.style.display = "inline-block";
       questionsArray[3].style.display = "flex";
-      deliveryNumber.innerHTML = "05";
+      deliveryNumber.innerText = "05";
     }
     showOptions(1);
     rotateArrow(1);
@@ -126,7 +126,7 @@ preferences.forEach((preference) => {
 });
 beanType.forEach((bean) => {
   bean.addEventListener("click", function () {
-    orderTextBean.innerHTML = `${bean.value}`;
+    orderTextBean.innerText = `${bean.value}`;
     showOptions(2);
     rotateArrow(2);
     increaseOpacity(2);
@@ -135,7 +135,7 @@ beanType.forEach((bean) => {
 });
 quantity.forEach((quantity) => {
   quantity.addEventListener("click", function () {
-    orderTextWeight.innerHTML = `${quantity.value}`;
+    orderTextWeight.innerText = `${quantity.value}`;
     if (grindOption.style.display === "none") {
       showOptions(4);
       increaseOpacity(4);
@@ -151,7 +151,7 @@ quantity.forEach((quantity) => {
 });
 grindOptions.forEach((grind) => {
   grind.addEventListener("click", function () {
-    orderTextGrind.innerHTML = `${grind.value}`;
+    orderTextGrind.innerText = `${grind.value}`;
     showOptions(4);
     rotateArrow(4);
     increaseOpacity(4);
@@ -161,7 +161,7 @@ grindOptions.forEach((grind) => {
 
 deliveries.forEach((delivery) => {
   delivery.addEventListener("click", function () {
-    orderTextDelivery.innerHTML = `${delivery.value}`;
+    orderTextDelivery.innerText = `${delivery.value}`;
     window.location.href = "#order-summary-link";
   });
 });
