@@ -34,6 +34,7 @@ const everyMonthPrice = document.getElementById("every-month-price");
 const monthlyPrice = document.getElementById("monthly-price");
 const greenArrowsArray = Array.from(greenArrows);
 const questionsArray = Array.from(questions);
+const monthlyPriceTablet = document.getElementById("monthly-price-tablet");
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -190,6 +191,7 @@ function displaySummary() {
   subscribeTextGrind.innerText = orderTextGrind.innerText;
   subscribeTextDelivery.innerText = orderTextDelivery.innerText;
   monthlyCostCalc(orderTextDelivery.innerText);
+  monthlyPriceTablet.innerText = monthlyPrice.innerHTML;
 }
 
 // Function to display the delivery costs depending on weight

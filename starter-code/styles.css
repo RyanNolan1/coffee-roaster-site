@@ -736,7 +736,7 @@ label:has([type="radio"]:checked) p {
   flex-direction: column;
   flex-grow: 1;
   gap: 1rem;
-    background-color: #fefcf7;
+  background-color: #fefcf7;
 }
 
 .subscribe-message {
@@ -783,6 +783,10 @@ label:has([type="radio"]:checked) p {
 
 #subscribe-ground-ala {
   display: none;
+}
+
+.price-and-button {
+  display:none;
 }
 
 @media (min-width: 768px) {
@@ -1087,7 +1091,6 @@ label:has([type="radio"]:checked) p {
     margin-top: -106.875px;
   }
 
-
   .subscribe-container {
     max-width: 33.75rem;
   }
@@ -1105,7 +1108,47 @@ label:has([type="radio"]:checked) p {
   }
 
   .subscribe-details {
-    padding:4rem;
+    padding: 4rem;
+  }
+
+  #subscribe-button {
+    display: none;
+  }
+
+  .monthly-price-tablet-container {
+    display: flex;
+    flex-grow:1;
+  }
+
+  #monthly-price {
+    display: none;
+  }
+
+  .price-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .price-and-button p {
+    font-size: 2rem;
+    color: #333d4b;
+    font-family: "Fraunces", serif;
+  }
+
+  #subscribe-button-tablet {
+    border: none;
+    background: rgb(14, 135, 132);
+    font-size: 1.2rem;
+    color: #fefcf7;
+    font-family: "Fraunces", serif;
+    padding: 1rem;
+    transition: 0.3s;
+    border-radius: 10px;
+    text-align: center;
+    justify-self: flex-end;
+    font-size: 1.125rem;
+    flex-grow:1;
   }
 }
 
