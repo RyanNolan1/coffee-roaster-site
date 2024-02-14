@@ -173,7 +173,7 @@ function displaySummary() {
   subscribeSection.style.visibility = "visible";
   subscribeAsOrUsing.innerText = asOrUsing.innerText;
   subscribeTextCoffee.innerText = orderTextCoffee.innerText;
-  subscribeTextBean.innerText = orderTextBean.innerText
+  subscribeTextBean.innerText = orderTextBean.innerText;
   subscribeTextWeight.innerText = orderTextWeight.innerText;
   subscribeGroundAla.innerText = groundAla.innerText;
   subscribeTextGrind.innerText = orderTextGrind.innerText;

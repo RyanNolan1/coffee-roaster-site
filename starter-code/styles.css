@@ -768,6 +768,26 @@ text-align: left;
   cursor: pointer;
 }
 
+.subscribe-text {
+  color:#83888f;
+  font-size: 1.5em;
+  line-height: 2.5rem;
+  text-align: left;
+  font-family: "Fraunces", serif;
+}
+
+#subscribe-text-coffee,
+#subscribe-text-bean,
+#subscribe-text-weight,
+#subscribe-text-grind,
+#subscribe-text-delivery {
+  color: #0e8784;
+}
+
+#subscribe-ground-ala {
+  display: none;
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 15px;
