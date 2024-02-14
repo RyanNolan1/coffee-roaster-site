@@ -6,7 +6,7 @@ This is a solution to the [Coffeeroasters subscription site challenge on Fronten
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -26,7 +26,7 @@ Users should be able to:
 - See hover states for all interactive elements throughout the site
 - Make selections to create a coffee subscription and see an order summary modal of their choices
 
-### Screenshot
+### Screenshots
 
 ![](./homepage.png)
 ![](./about.html)
