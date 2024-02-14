@@ -102,6 +102,8 @@ function rotateArrow(index) {
   }
 }
 
+// Function to show options for each question, rotate green arrows and move down the page on click
+
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
@@ -173,6 +175,8 @@ deliveries.forEach((delivery) => {
 
 submitButton.addEventListener("click", displaySummary);
 
+// Function to display the order summary overlay
+
 function displaySummary() {
   subscribeSection.style.opacity = "1";
   subscribeSection.style.visibility = "visible";
@@ -185,6 +189,8 @@ function displaySummary() {
   subscribeTextDelivery.innerText = orderTextDelivery.innerText;
   monthlyCostCalc(orderTextDelivery.innerText);
 }
+
+// Function to display the delivery costs depending on weight
 
 function shippingCost(weight) {
   if (weight === "250g") {
@@ -201,6 +207,8 @@ function shippingCost(weight) {
     everyMonthPrice.innerText = "$42.00";
   }
 }
+
+// Function to calculate the checkout cost
 
 function monthlyCostCalc(typeOfDelivery) {
   if (typeOfDelivery === "Every week") {
