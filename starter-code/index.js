@@ -204,11 +204,16 @@ function shippingCost(weight) {
 
 function monthlyCostCalc(typeOfDelivery) {
   if (typeOfDelivery === "Every week") {
-    monthlyPrice.innerHTML = Number(everyWeekPrice.innerText.substring(1)) * 4;
+    monthlyPrice.innerHTML = (
+      Number(everyWeekPrice.innerText.substring(1)) * 4
+    ).toFixed(2);
   } else if (typeOfDelivery === "Every 2 weeks") {
-    monthlyPrice.innerHTML =
-      Number(everyTwoWeekPrice.innerText.substring(1)) * 2;
+    monthlyPrice.innerHTML = (
+      Number(everyTwoWeekPrice.innerText.substring(1)) * 2
+    ).toFixed(2);
   } else if (typeOfDelivery === "Every month") {
-    monthlyPrice.innerHTML = Number(everyMonthPrice.innerText.substring(1)) * 1;
+    monthlyPrice.innerHTML = (
+      Number(everyMonthPrice.innerText.substring(1)) * 1
+    ).toFixed(2);
   }
 }
