@@ -17,8 +17,24 @@ const orderTextGrind = document.getElementById("order-text-grind");
 const orderTextDelivery = document.getElementById("order-text-delivery");
 const groundAla = document.getElementById("ground-ala");
 const deliveryNumber = document.getElementById("delivery-number");
+const submitButton = document.getElementById("submit-button");
+const subscribeSection = document.getElementById("subscribe-section");
+const subscribeAsOrUsing = document.getElementById("subscribe-as-or-using");
+const subscribeTextCoffee = document.getElementById("subscribe-text-coffee");
+const subscribeTextBean = document.getElementById("subscribe-text-bean");
+const subscribeTextWeight = document.getElementById("subscribe-text-weight");
+const subscribeGroundAla = document.getElementById("subscribe-ground-ala");
+const subscribeTextGrind = document.getElementById("subscribe-text-grind");
+const subscribeTextDelivery = document.getElementById(
+  "subscribe-text-delivery"
+);
+const everyWeekPrice = document.getElementById("every-week-price");
+const everyTwoWeekPrice = document.getElementById("every-two-week-price");
+const everyMonthPrice = document.getElementById("every-month-price");
+const monthlyPrice = document.getElementById("monthly-price");
 const greenArrowsArray = Array.from(greenArrows);
 const questionsArray = Array.from(questions);
+const monthlyPriceTablet = document.getElementById("monthly-price-tablet");
 
 burgerNav.addEventListener("click", toggleMenu);
 
@@ -87,26 +103,29 @@ function rotateArrow(index) {
   }
 }
 
+// Function to show options for each question, rotate green arrows and move down the page on click
 
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
-      orderTextCoffee.innerHTML = `${preference.value}`;
-      asOrUsing.innerHTML = "using";
+      orderTextCoffee.innerText = `${preference.value}`;
+      asOrUsing.innerText = "using";
       grindOption.style.display = "none";
       groundAla.style.display = "none";
       questionsArray[3].style.display = "none";
-      deliveryNumber.innerHTML = "04";
+      deliveryNumber.innerText = "04";
+      subscribeGroundAla.style.display = "none";
     } else if (
       preference.value === "Filter" ||
       preference.value === "Espresso"
     ) {
-      orderTextCoffee.innerHTML = `${preference.value}`;
-      asOrUsing.innerHTML = "as";
+      orderTextCoffee.innerText = `${preference.value}`;
+      asOrUsing.innerText = "as";
       grindOption.style.display = "block";
       groundAla.style.display = "inline-block";
       questionsArray[3].style.display = "flex";
-      deliveryNumber.innerHTML = "05";
+      deliveryNumber.innerText = "05";
+      subscribeGroundAla.style.display = "inline-block";
     }
     showOptions(1);
     rotateArrow(1);
@@ -116,7 +135,7 @@ preferences.forEach((preference) => {
 });
 beanType.forEach((bean) => {
   bean.addEventListener("click", function () {
-    orderTextBean.innerHTML = `${bean.value}`;
+    orderTextBean.innerText = `${bean.value}`;
     showOptions(2);
     rotateArrow(2);
     increaseOpacity(2);
@@ -125,7 +144,7 @@ beanType.forEach((bean) => {
 });
 quantity.forEach((quantity) => {
   quantity.addEventListener("click", function () {
-    orderTextWeight.innerHTML = `${quantity.value}`;
+    orderTextWeight.innerText = `${quantity.value}`;
     if (grindOption.style.display === "none") {
       showOptions(4);
       increaseOpacity(4);
@@ -137,11 +156,12 @@ quantity.forEach((quantity) => {
       rotateArrow(3);
       window.location.href = "#grind-option";
     }
+    shippingCost(quantity.value);
   });
 });
 grindOptions.forEach((grind) => {
   grind.addEventListener("click", function () {
-    orderTextGrind.innerHTML = `${grind.value}`;
+    orderTextGrind.innerText = `${grind.value}`;
     showOptions(4);
     rotateArrow(4);
     increaseOpacity(4);
@@ -151,7 +171,61 @@ grindOptions.forEach((grind) => {
 
 deliveries.forEach((delivery) => {
   delivery.addEventListener("click", function () {
-    orderTextDelivery.innerHTML = `${delivery.value}`;
+    orderTextDelivery.innerText = `${delivery.value}`;
     window.location.href = "#order-summary-link";
   });
 });
+
+submitButton.addEventListener("click", displaySummary);
+
+// Function to display the order summary overlay
+
+function displaySummary() {
+  subscribeSection.style.opacity = "1";
+  subscribeSection.style.visibility = "visible";
+  subscribeAsOrUsing.innerText = asOrUsing.innerText;
+  subscribeTextCoffee.innerText = orderTextCoffee.innerText;
+  subscribeTextBean.innerText = orderTextBean.innerText;
+  subscribeTextWeight.innerText = orderTextWeight.innerText;
+  subscribeGroundAla.innerText = groundAla.innerText;
+  subscribeTextGrind.innerText = orderTextGrind.innerText;
+  subscribeTextDelivery.innerText = orderTextDelivery.innerText;
+  monthlyCostCalc(orderTextDelivery.innerText);
+  monthlyPriceTablet.innerText = monthlyPrice.innerText;
+}
+
+// Function to display the delivery costs depending on weight
+
+function shippingCost(weight) {
+  if (weight === "250g") {
+    everyWeekPrice.innerText = "$7.20";
+    everyTwoWeekPrice.innerText = "$9.60";
+    everyMonthPrice.innerText = "$12.00";
+  } else if (weight === "500g") {
+    everyWeekPrice.innerText = "$13.00";
+    everyTwoWeekPrice.innerText = "$17.50";
+    everyMonthPrice.innerText = "$22.00";
+  } else if (weight === "1000g") {
+    everyWeekPrice.innerText = "$22.00";
+    everyTwoWeekPrice.innerText = "$32.00";
+    everyMonthPrice.innerText = "$42.00";
+  }
+}
+
+// Function to calculate the checkout cost
+
+function monthlyCostCalc(typeOfDelivery) {
+  if (typeOfDelivery === "Every week") {
+    monthlyPrice.innerText = (
+      Number(everyWeekPrice.innerText.substring(1)) * 4
+    ).toFixed(2);
+  } else if (typeOfDelivery === "Every 2 weeks") {
+    monthlyPrice.innerText = (
+      Number(everyTwoWeekPrice.innerText.substring(1)) * 2
+    ).toFixed(2);
+  } else if (typeOfDelivery === "Every month") {
+    monthlyPrice.innerText = (
+      Number(everyMonthPrice.innerText.substring(1)) * 1
+    ).toFixed(2);
+  }
+}
