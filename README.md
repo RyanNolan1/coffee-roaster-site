@@ -30,7 +30,7 @@ Users should be able to:
 
 ![Homepage](./homepage.png)
 
-[About Page](./about.html)
+![About Page](./about.html)
 
 ![Create Your Plan Page](./create-your-plan-page.png)
 
