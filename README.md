@@ -29,7 +29,7 @@ Users should be able to:
 ### Screenshots
 
 ![](./homepage.png)
-![](./about.html)
+ [](./about.html)
 ![](./create-your-plan-page.png)
 
 ### Links
