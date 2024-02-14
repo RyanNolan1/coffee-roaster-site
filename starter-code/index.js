@@ -191,7 +191,7 @@ function displaySummary() {
   subscribeTextGrind.innerText = orderTextGrind.innerText;
   subscribeTextDelivery.innerText = orderTextDelivery.innerText;
   monthlyCostCalc(orderTextDelivery.innerText);
-  monthlyPriceTablet.innerText = monthlyPrice.innerHTML;
+  monthlyPriceTablet.innerText = monthlyPrice.innerText;
 }
 
 // Function to display the delivery costs depending on weight
@@ -216,15 +216,15 @@ function shippingCost(weight) {
 
 function monthlyCostCalc(typeOfDelivery) {
   if (typeOfDelivery === "Every week") {
-    monthlyPrice.innerHTML = (
+    monthlyPrice.innerText = (
       Number(everyWeekPrice.innerText.substring(1)) * 4
     ).toFixed(2);
   } else if (typeOfDelivery === "Every 2 weeks") {
-    monthlyPrice.innerHTML = (
+    monthlyPrice.innerText = (
       Number(everyTwoWeekPrice.innerText.substring(1)) * 2
     ).toFixed(2);
   } else if (typeOfDelivery === "Every month") {
-    monthlyPrice.innerHTML = (
+    monthlyPrice.innerText = (
       Number(everyMonthPrice.innerText.substring(1)) * 1
     ).toFixed(2);
   }
