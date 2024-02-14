@@ -31,6 +31,7 @@ const subscribeTextDelivery = document.getElementById(
 const everyWeekPrice = document.getElementById("every-week-price");
 const everyTwoWeekPrice = document.getElementById("every-two-week-price");
 const everyMonthPrice = document.getElementById("every-month-price");
+const monthlyPrice = document.getElementById("monthly-price");
 const greenArrowsArray = Array.from(greenArrows);
 const questionsArray = Array.from(questions);
 
@@ -150,7 +151,7 @@ quantity.forEach((quantity) => {
       rotateArrow(3);
       window.location.href = "#grind-option";
     }
-    shippingCost(quantity.value)
+    shippingCost(quantity.value);
   });
 });
 grindOptions.forEach((grind) => {
@@ -182,6 +183,7 @@ function displaySummary() {
   subscribeGroundAla.innerText = groundAla.innerText;
   subscribeTextGrind.innerText = orderTextGrind.innerText;
   subscribeTextDelivery.innerText = orderTextDelivery.innerText;
+  monthlyCostCalc(orderTextDelivery.innerText);
 }
 
 function shippingCost(weight) {
@@ -197,5 +199,16 @@ function shippingCost(weight) {
     everyWeekPrice.innerText = "$22.00";
     everyTwoWeekPrice.innerText = "$32.00";
     everyMonthPrice.innerText = "$42.00";
+  }
+}
+
+function monthlyCostCalc(typeOfDelivery) {
+  if (typeOfDelivery === "Every week") {
+    monthlyPrice.innerHTML = Number(everyWeekPrice.innerText.substring(1)) * 4;
+  } else if (typeOfDelivery === "Every 2 weeks") {
+    monthlyPrice.innerHTML =
+      Number(everyTwoWeekPrice.innerText.substring(1)) * 2;
+  } else if (typeOfDelivery === "Every month") {
+    monthlyPrice.innerHTML = Number(everyMonthPrice.innerText.substring(1)) * 1;
   }
 }
