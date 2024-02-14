@@ -695,7 +695,7 @@ label:has([type="radio"]:checked) p {
   cursor: pointer;
 }
 
-.subscribe-section {
+#subscribe-section {
   height: 100vh;
   position: fixed;
   z-index: 10;
@@ -706,7 +706,8 @@ label:has([type="radio"]:checked) p {
   background: #000a0a8f;
   padding: 1.5rem;
   width:100vw;
-  display:none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .subscribe-container {

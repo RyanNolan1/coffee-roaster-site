@@ -18,6 +18,16 @@ const orderTextDelivery = document.getElementById("order-text-delivery");
 const groundAla = document.getElementById("ground-ala");
 const deliveryNumber = document.getElementById("delivery-number");
 const submitButton = document.getElementById("submit-button");
+const subscribeSection = document.getElementById("subscribe-section");
+const subscribeAsOrUsing = document.getElementById("subscribe-as-or-using");
+const subscribeTextCoffee = document.getElementById("subscribe-text-coffee");
+const subscribeTextBean = document.getElementById("subscribe-text-bean");
+const subscribeTextWeight = document.getElementById("subscribe-text-weight");
+const subscribeGroundAla = document.getElementById("subscribe-ground-ala");
+const subscribeTextGrind = document.getElementById("subscribe-text-grind");
+const subscribeTextDelivery = document.getElementById(
+  "subscribe-text-delivery"
+);
 const greenArrowsArray = Array.from(greenArrows);
 const questionsArray = Array.from(questions);
 
@@ -88,7 +98,6 @@ function rotateArrow(index) {
   }
 }
 
-
 preferences.forEach((preference) => {
   preference.addEventListener("click", function () {
     if (preference.value === "Capsules") {
@@ -157,9 +166,16 @@ deliveries.forEach((delivery) => {
   });
 });
 
-
-submitButton.addEventListener("click", displaySummary)
+submitButton.addEventListener("click", displaySummary);
 
 function displaySummary() {
-console.log(`"I drink my coffee ${asOrUsing.innerText} ${orderTextCoffee.innerText}, with a ${orderTextBean.innerText} type of bean. ${orderTextWeight.innerText} ${groundAla.innerText} ${orderTextGrind.innerText}, sent to me ${orderTextDelivery.innerText}."`)
+  subscribeSection.style.opacity = "1";
+  subscribeSection.style.visibility = "visible";
+  subscribeAsOrUsing.innerText = asOrUsing.innerText;
+  subscribeTextCoffee.innerText = orderTextCoffee.innerText;
+  subscribeTextBean.innerText = orderTextBean.innerText
+  subscribeTextWeight.innerText = orderTextWeight.innerText;
+  subscribeGroundAla.innerText = groundAla.innerText;
+  subscribeTextGrind.innerText = orderTextGrind.innerText;
+  subscribeTextDelivery.innerText = orderTextDelivery.innerText;
 }
