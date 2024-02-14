@@ -712,16 +712,15 @@ label:has([type="radio"]:checked) p {
 
 .subscribe-container {
   background-color: #FEFCF7;
-  height: 100vh;
   border-radius: 10px;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   display:flex;
-  overflow: hidden;
   max-width:33.75rem;
-  max-height:37.3125rem;
+  min-height:37.3125rem;
   font-size:0.9375rem;
+  overflow:hidden;
 }
 
 .subscribe-header {
@@ -735,11 +734,11 @@ label:has([type="radio"]:checked) p {
 }
 
 .subscribe-details {
-  padding: 4rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem;
   display:flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: left;
   flex-grow: 1;
   gap:1rem;
 }

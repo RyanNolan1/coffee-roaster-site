@@ -113,6 +113,7 @@ preferences.forEach((preference) => {
       groundAla.style.display = "none";
       questionsArray[3].style.display = "none";
       deliveryNumber.innerText = "04";
+      subscribeGroundAla.style.display = "none";
     } else if (
       preference.value === "Filter" ||
       preference.value === "Espresso"
@@ -123,6 +124,7 @@ preferences.forEach((preference) => {
       groundAla.style.display = "inline-block";
       questionsArray[3].style.display = "flex";
       deliveryNumber.innerText = "05";
+      subscribeGroundAla.style.display = "inline-block";
     }
     showOptions(1);
     rotateArrow(1);
