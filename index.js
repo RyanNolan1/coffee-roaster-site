@@ -192,6 +192,7 @@ function displaySummary() {
   subscribeTextDelivery.innerText = orderTextDelivery.innerText;
   monthlyCostCalc(orderTextDelivery.innerText);
   monthlyPriceTablet.innerText = monthlyPrice.innerText;
+  toggleScroll();
 }
 
 // Function to display the delivery costs depending on weight
@@ -227,5 +228,13 @@ function monthlyCostCalc(typeOfDelivery) {
     monthlyPrice.innerText = (
       Number(everyMonthPrice.innerText.substring(1)) * 1
     ).toFixed(2);
+  }
+}
+
+function toggleScroll() {
+  if ((subscribeSection.style.opacity = "1")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.over = "";
   }
 }
