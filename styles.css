@@ -696,7 +696,7 @@ label:has([type="radio"]:checked) p {
 }
 
 #subscribe-section {
-  height: 100vh;
+  height: 100svh;
   position: fixed;
   z-index: 10;
   display: flex;
@@ -1150,6 +1150,11 @@ label:has([type="radio"]:checked) p {
     font-size: 1.125rem;
     flex-grow:1;
   }
+
+  #subscribe-button-tablet:hover {
+    background: #66d2cf;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1412,10 +1417,14 @@ label:has([type="radio"]:checked) p {
     opacity: 1;
     visibility: visible;
   }
-}
 
 #submit-button {
   align-self: end;
+}
+
+#subscribe-section {
+  height: 100vh;
+}
 }
 
 @media (min-width: 1440px) {
