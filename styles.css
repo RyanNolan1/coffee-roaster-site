@@ -696,7 +696,7 @@ label:has([type="radio"]:checked) p {
 }
 
 #subscribe-section {
-  height: 100svh;
+  height: 100lvh;
   position: fixed;
   z-index: 10;
   display: flex;
